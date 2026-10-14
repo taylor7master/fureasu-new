@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0:1",
+    "name": "Page 1",
+    "type": "CANVAS"
+  },
+  {
+    "id": "1:2",
+    "name": "Page 2",
+    "type": "CANVAS"
+  }
+]

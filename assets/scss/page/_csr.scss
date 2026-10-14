@@ -1,0 +1,445 @@
+.csr-intro {
+  position: relative;
+  padding: 7.2rem 0 8.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 11.2rem;
+    margin-bottom: 7.2rem;
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 3.6rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/csr/title-ext.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-intro {
+    position: relative;
+    margin-bottom: 6.4rem;
+
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+
+    .lead {
+      position: relative;
+      max-width: 78.2rem;
+      font-size: 3.0rem;
+      font-weight: 600;
+      line-height: 4.0rem;
+      color: $color-base;
+      margin-bottom: 3.6rem;
+
+      @include sp {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 2.0rem;
+      }
+    }
+
+    .desc {
+      position: relative;
+    }
+  }
+
+  .section-content {
+    position: relative;
+
+    .csr-list {
+      position: relative;
+      display: block;
+
+      & > li {
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: 4.0rem;
+        }
+      }
+    }
+
+    .csr-block {
+      position: relative;
+      display: block;
+      padding: 4.8rem 3.6rem 6.0rem;
+      border: 1px solid $color-base;
+
+      @include sp {
+        padding: 4.0rem 1.8rem 4.8rem;
+      }
+
+      .block-title {
+        position: relative;
+        margin-bottom: 4.0rem;
+
+        @include sp {
+          margin-bottom: 2.4rem;
+        }
+
+        h3 {
+          position: relative;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          padding: 0 0 0 2.2rem;
+          margin: 0;
+
+          @include sp {
+            font-size: 2.2rem;
+            line-height: 3.0rem;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.9rem;
+            left: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            background: $color-base;
+          }
+        }
+
+        p {
+          position: relative;
+          margin-top: 1.2rem;
+        }
+      }
+
+      .block-content {
+        position: relative;
+
+        .support-photos {
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 2.1rem;
+
+          @include sp {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 2.0rem;
+          }
+
+          & > li {
+            position: relative;
+          }
+
+          .photo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .player-list {
+          position: relative;
+          display: block;
+          & > li {
+            position: relative;
+            &:not(:last-child) {
+              margin-bottom: 2.4rem;
+              @include sp {
+                margin-bottom: 3.0rem;
+              }
+            }
+          }
+        }
+
+        .player-card {
+          position: relative;
+          display: block;
+          padding: 4.0rem 3.6rem 4.8rem;
+          background: $color-bg-pink;
+          @include sp {
+            padding: 1.8rem 1.8rem 2.4rem;
+          }
+          &::after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          .player-image {
+            position: relative;
+            @include pc {
+              width: 23.0rem;
+              float: left;
+            }
+            @include sp {
+              width: 100%;
+              margin-bottom: 2.0rem;
+            }
+          }
+          .player-body {
+            position: relative;
+            &::after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+            @include pc {
+              width: calc(100% - 26.6rem);
+              float: right;
+            }
+            .name {
+              position: relative;
+              margin-bottom: 2.0rem;
+              @include pc {
+                float: left;
+                width: fit-content;
+                min-width: 17.2rem;
+              }
+              .en {
+                position: relative;
+                font-size: 2.4rem;
+                font-weight: 400;
+                line-height: 3.0rem;
+                color: $color-base;
+              }
+              .jp {
+                position: relative;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 3.0rem;
+                color: $color-base;
+                small {
+                  font-size: 2.0rem;
+                }
+              }
+            }
+            .sns {
+              position: relative;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 1.2rem;
+              @include pc {
+                float: left;
+                width: fit-content;
+                margin: 1.2rem 0 0 3.2rem;
+              }
+              @include sp {
+                justify-content: center;
+                margin-bottom: 2.4rem;
+              }
+              & > li {
+                position: relative;
+                flex: 0 0 auto;
+                width: fit-content;
+              }
+              .site-link {
+                position: relative;
+                width: 10.0rem;
+                height: 3.2rem;
+                padding: 0;
+                border-radius: 3.2rem;
+                &::after {
+                  border-radius: 3.2rem;
+                }
+              }
+              .sns-link {
+                position: relative;
+                display: block;
+                width: 3.2rem;
+                padding: 0;
+                margin: 0;
+                transition: opacity 0.3s ease;
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  object-position: center center;
+                  margin: 0;
+                  border: none;
+                }
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+            .meta {
+              position: relative;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 1.0rem;
+              margin-bottom: 2.4rem;
+              @include pc {
+                float: left;
+                width: 100%;
+              }
+              @include sp {
+                margin-bottom: 2.0rem;
+              }
+              & > li {
+                position: relative;
+                flex: 0 0 auto;
+                width: fit-content;
+              }
+              .tag {
+                position: relative;
+                display: block;
+                padding: 0.3rem 1.2rem 0.3rem;
+                background: $color-base;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 2.4rem;
+                color: $color-white;
+              }
+            }
+            .desc {
+              position: relative;
+              @include pc {
+                float: left;
+                width: 100%;
+              }
+            }
+            @include pc {
+              &:not(:has(.en)) {
+                margin-top: 4.8rem;
+                .name {
+                  margin-top: 0.3rem;
+                }
+                .sns {
+                  margin-top: 0;
+                }
+              }
+            }
+            @include sp {
+              &:not(:has(.en)) {
+                .name {
+                  .jp {
+                    letter-spacing: -0.025em;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .activity-list {
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 3.0rem;
+    
+          @include sp {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 3.0rem;
+          }
+    
+          & > li {
+            position: relative;
+          }
+        }
+    
+        .activity-card {
+          position: relative;
+          display: block;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          border: 1px solid $color-base;
+          z-index: 0;
+          .card-image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 493 / 250;
+            @include sp {
+              aspect-ratio: 320 / 194;
+            }
+          }
+
+          .card-body {
+            position: relative;
+            padding: 3.2rem 2.4rem 4.0rem;
+            @include sp {
+              padding: 2.8rem 1.8rem 3.2rem;
+            }
+            .label {
+              position: relative;
+              font-size: 2.4rem;
+              font-weight: 600;
+              line-height: 3.2rem;
+              color: $color-base;
+              margin-bottom: 1.6rem;
+              @include sp {
+                font-size: 2.2rem;
+                line-height: 3.0rem;
+              }
+            }
+            .desc {
+              position: relative;
+            }
+          }
+    
+        }
+
+      }
+      .block-actions {
+        position: relative;
+        @include pc {
+          position: absolute;
+          top: 5.0rem;
+          right: 3.6rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 1.6rem;
+        }
+        @include sp {
+          margin-top: 3.2rem;
+        }
+        & > li {
+          position: relative;
+          @include pc {
+            flex: 0 0 auto;
+            width: fit-content;
+          }
+          @include sp {
+            &:not(:last-child) {
+              margin-bottom: 1.6rem;
+            }
+          }
+        }
+        .btn {
+          position: relative;
+          width: 18.0rem;
+          @include sp {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

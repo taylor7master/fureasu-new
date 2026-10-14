@@ -1,0 +1,676 @@
+#footer {
+  position: relative;
+  padding: 8.0rem 0 3.0rem;
+  background: $color-white;
+  z-index: 0;
+  @include sp {
+    padding: 7.0rem 0 3.0rem;
+  }
+
+  .footer-wrapper {
+    position: relative;
+    display: block;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .footer-brand {
+    position: relative;
+    @include pc {
+      float: left;
+      width: fit-content;
+      max-width: 100%;
+    }
+    .footer-logo {
+      position: relative;
+      display: block;
+      padding: 0;
+      @include pc {
+        width: fit-content;
+      }
+      a {
+        position: relative;
+        display: block;
+        width: 30.5rem;
+        max-width: 100%;
+        @include sp {
+          width: 25.6rem;
+          margin: 0 auto;
+        }
+        & > img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          border: none;
+        }
+      }
+    }
+    .footer-info {
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $color-primary;
+      text-align: left;
+      padding: 0;
+      margin-top: 3.6rem;
+      @include sp {
+        margin-top: 5.0rem;
+        text-align: left;
+
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-contact {
+    position: relative;
+    @include pc {
+      float: left;
+      width: 56.0rem;
+      max-width: 100%;
+      margin-top: 3.2rem;
+    }
+    @include sp {
+      margin-top: 5.4rem;
+    }
+    .contact-list {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include pc {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1.0rem;
+      }
+      @include sp {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.0rem;
+      }
+      & > li {
+        position: relative;
+        @include pc {
+          width: fit-content;
+          max-width: 100%;
+        }
+        @include sp {
+          &:last-child {
+            grid-column: span 2;
+          }
+        }
+      }
+      
+    }
+    .contact-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20.0rem;
+      height: 6.4rem;
+      background: linear-gradient(90deg, $color-yellow 0%, $color-pink 100%);
+      border: none;
+      border-radius: 0;
+      color: $color-base;
+      padding: 2px;
+      margin: 0;
+      z-index: 0;
+      @include sp {
+        width: 100%;
+      }
+      .inner {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        z-index: 3;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        display: block;
+        background: $color-white;
+        transition: transform 0.4s ease-in-out;
+        transform-origin: left top;
+        transform: scale(1, 1);
+        z-index: 1;
+      }
+      .lead {
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        color: inherit;
+        width: 100%;
+        transition: color 0.4s ease-in-out;
+        margin: 0;
+      }
+      .time {
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        color: inherit;
+        width: 100%;
+        transition: color 0.4s ease-in-out;
+        margin: 0;
+      }
+      &:hover {
+        color: $color-white;
+        &::before {
+          transform-origin: right top;
+          transform: scale(0, 1);
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    position: relative;
+    @include pc {
+      float: right;
+      width: fit-content;
+      max-width: 100%;
+      margin-top: 1.2rem;
+    }
+    @include sp {
+      margin-top: 5.4rem;
+    }
+    .footer-menu {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 2.4rem 6.0rem;
+      list-style: none;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $color-primary;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      @include sp {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5.4rem 3.0rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+      & > li {
+        position: relative;
+        max-width: 100%;
+      }
+      @include pc {
+        .ir-menu {
+          grid-row: span 2;
+        }
+      }
+      @include sp {
+        .company-menu {
+          order: 1;
+        }
+        .business-menu {
+          order: 2;
+        }
+        .ir-menu {
+          order: 3;
+        }
+        .sustain-menu {
+          order: 4;
+        }
+        .governance-menu {
+          order: 5;
+        }
+        .other-menu {
+          order: 6;
+        }
+      }
+      .menu-lead {
+        position: relative;
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        color: $color-primary;
+        text-align: left;
+        padding: 0;
+        margin: 0 0 1.2rem;
+        @include sp {
+          padding-bottom: 0.8rem;
+          border-bottom: 1px solid $color-primary;
+          margin-bottom: 1.5rem;
+        }
+        a {
+          font: inherit;
+          color: inherit;
+          text-decoration: none;
+          transition: color 0.2s ease;
+          &:hover {
+            color: $color-base;
+          }
+        }
+      }
+      .menu-list {
+        position: relative;
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & > li {
+          position: relative;
+          &:not(:last-child) {
+            margin-bottom: 0.6rem;
+            @include sp {
+              margin-bottom: 0.8rem;
+            }
+          }
+        }
+      }
+      .menu-link {
+        position: relative;
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        font: inherit;
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s ease;
+        &:hover {
+          color: $color-base;
+        }
+      }
+    }
+  }
+
+  .footer-group {
+    position: relative;
+    margin-top: 6.0rem;
+    @include pc {
+      float: left;
+      width: fit-content;
+      max-width: 100%;
+      clear: left;
+    }
+    @include sp {
+      margin-top: 5.4rem;
+    }
+    .group-title {
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      text-align: left;
+      color: $color-primary;
+      margin: 0 0 0.8rem;
+      @include sp {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 0 1.2rem;
+      }
+    }
+    .group-list {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.0rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include sp {
+        gap: 1.5rem;
+      }
+      & > li {
+        position: relative;
+        width: fit-content;
+        max-width: 100%;
+        @include sp {
+          width: calc(50% - 0.75rem);
+        }
+      }
+      .group-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        min-width: 13.2rem;
+        max-width: 100%;
+        height: 3.4rem;
+        padding: 0.1rem 2.0rem 0;
+        border-radius: 3.4rem;
+        background: $color-white;
+        font-family: $font_inter;
+        font-size: 1.0rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: $color-primary;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        overflow: hidden;
+        margin: 0;
+        z-index: 0;
+        @include pc {
+          white-space: nowrap;
+        }
+        @include sp {
+          font-size: 1.1rem;
+          line-height: 1.2;
+          min-width: 15.6rem;
+          height: 3.6rem;
+          border-radius: 3.6rem;
+          padding: 0.2rem 1.0rem 0;
+        }
+        svg {
+          position: relative;
+          display: block;
+          flex: 0 0 auto;
+          width: 0.6rem;
+          height: auto;
+          z-index: 3;
+          @include sp {
+            width: 0.7rem;
+          }
+          path {
+            transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+          }
+        }
+        span {
+          position: relative;
+          display: block;
+          width: fit-content;
+          max-width: 100%;
+          color: inherit;
+          text-decoration: none;
+          text-align: center;
+          transition: color 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+          z-index: 3;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          display: block;
+          background: $color-base;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+          transform-origin: right top;
+          transform: scale(0, 1);
+          z-index: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          display: block;
+          background: none;
+          border: 0.3rem solid $color-base;
+          border-radius: 3.4rem;
+          z-index: 0;
+        }
+        &:hover {
+          color: $color-white;
+          &::before {
+            transform-origin: left top;
+            transform: scale(1, 1);
+          }
+          svg {
+            color: $color-white;
+          }
+        }
+        &.yellow {
+          &::after {
+            border-color: $color-yellow;
+          }
+          &::before {
+            background: $color-yellow;
+          }
+          &:hover {
+            color: $color-primary;
+            &::before {
+              transform-origin: left top;
+              transform: scale(1, 1);
+            }
+            svg {
+              color: $color-primary;
+            }
+          }
+        }
+        &.purple {
+          &::after {
+            border-color: $color-purple;
+          }
+          &::before {
+            background: $color-purple;
+          }
+        }
+      }
+    }
+    &--brands {
+      margin-top: 2.4rem;
+      @include sp {
+        margin-top: 4.0rem;
+      }
+    }
+  }
+
+  .footer-other {
+    position: relative;
+    margin-top: -1.0rem;
+    @include pc {
+      float: right;
+      width: fit-content;
+      max-width: 100%;
+    }
+    @include sp {
+      margin-top: 5.4rem;
+    }
+    .other-list {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 3.6rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include sp {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.6rem;
+      }
+      & > li {
+        position: relative;
+        width: fit-content;
+        max-width: 100%;
+      }
+      .sns {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: fit-content;
+        max-width: 100%;
+        gap: 1.0rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & > li {
+          position: relative;
+          width: fit-content;
+          max-width: 100%;
+        }
+        .sns-link {
+          position: relative;
+          display: block;
+          width: 5.4rem;
+          padding: 0;
+          margin: 0;
+          border: none;
+          transition: opacity 0.3s ease;
+          outline: none;
+          z-index: 0;
+          & > img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border: none;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      .other {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: fit-content;
+        max-width: 100%;
+        gap: 1.4rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & > li {
+          position: relative;
+          width: fit-content;
+          max-width: 100%;
+        }
+        .other-link {
+          position: relative;
+          display: block;
+          width: 5.0rem;
+          padding: 0;
+          margin: 0;
+          border: none;
+          transition: opacity 0.3s ease;
+          outline: none;
+          z-index: 0;
+          & > img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border: none;
+          }
+        }
+        a.other-link {
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .term-list {
+      position: relative;
+      list-style: none;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: $color-primary;
+      text-align: center;
+      padding: 0;
+      @include pc {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 1.6rem -2.0rem 0 0;
+      }
+      @include sp {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        text-align: left;
+        margin: 3.0rem 0 0;
+      }
+      & > li {
+        position: relative;
+        @include pc {
+          width: fit-content;
+          padding: 0 2.0rem;
+          max-width: 100%;
+        }
+        @include sp {
+          display: inline;
+        }
+        &:not(:last-child) {
+          @include pc {
+            padding-right: 2.1rem;
+            &::before {
+              content: "";
+              position: absolute;
+              display: block;
+              top: calc(50% - 0.9rem);
+              right: 0;
+              display: block;
+              width: 1px;
+              height: 1.8rem;
+              background: $color-primary;
+              z-index: 0;
+            }
+          }
+          @include sp {
+            &::after {
+              content: "｜";
+              display: inline-block;
+              padding: 0 0.4rem;
+            }
+          }
+        }
+      }
+      .term-link {
+        position: relative;
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        @include sp {
+          display: inline;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  position: relative;
+  padding: 1.6rem 2.0rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: $color-white;
+  text-align: center;
+  background: $color-base;
+  @include sp { 
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    padding: 1.2rem 2.0rem;
+  }
+}

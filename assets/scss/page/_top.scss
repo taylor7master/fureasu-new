@@ -1,0 +1,967 @@
+.mainvisual {
+  position: relative;
+  padding: 1.0rem 0 12.0rem;
+  margin: 0;
+  @include sp {
+    padding: 0 0 1.0rem;
+  }
+  &__inner {
+    position: relative;
+    max-width: 145rem;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  &__copy {
+    position: relative;
+    z-index: 2;
+    @include pc {
+      padding-left: 2.5rem;
+      padding-top: 11.2rem;
+    }
+    @include sp {
+      padding: 0 1.6rem;
+      margin-top: 4.0rem;
+    }
+    .title {
+      font-family: $font_shippori;
+      font-weight: 600;
+      font-size: 5.4rem;
+      line-height: 1.5;
+      color: $color-base;
+      @include sp {
+        font-size: 2.5rem;
+      }
+    }
+    .group {
+      position: relative;
+      margin-top: 3.0rem;
+      width: 42.0rem;
+      @include sp {
+        width: 18.6rem;
+        margin-top: 1.6rem;
+      }
+      img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+  &__photos {
+    width: 78.4rem;
+    z-index: 0;
+    @include pc {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    @include sp {
+      position: relative;
+      width: 100%;
+    }
+    .main {
+      position: relative;
+      display: block;
+      width: 71.2rem;
+      height: auto;
+      margin: 0 0 0 auto;
+      box-shadow: -3.0rem 3.0rem 0 rgba($color: $color-base, $alpha: 0.24);
+      z-index: 0;
+      @include sp {
+        width: 32.0rem;
+        box-shadow: -1.2rem 1.4rem 0 rgba($color: $color-base, $alpha: 0.24);
+      }
+    }
+    .main,
+    .sub {
+      &.scrt-cover img {
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+      }
+    }
+    .sub {
+      width: 31.4rem;
+      height: auto;
+      box-shadow: -2.4rem 2.4rem 0 rgba($color: $color-yellow, $alpha: 0.24);
+      margin: 0;
+      @include pc {
+        position: absolute;
+        top: 26.9rem;
+        left: 0;
+        z-index: 1;
+      }
+      @include sp {
+        position: relative;
+        width: 17.6rem;
+        margin-top: -6.4rem;
+        margin-left: 2.8rem;
+        box-shadow: -1.4rem 1.2rem 0 rgba($color: $color-yellow, $alpha: 0.24);
+        z-index: 1;
+      }
+      
+    }
+  }
+}
+
+.top-news-section {
+  position: relative;
+  padding: 8.0rem 0 0;
+  z-index: 2;
+  @include sp {
+    padding: 7.0rem 0 1.0rem;
+  }
+  .news-bar {
+    position: relative;
+    padding: 2.0rem 3.0rem 2.0rem 4.0rem;
+    border: 1px solid $color-base;
+    max-width: 108.0rem;
+    margin: 0 auto;
+    gap: 1.2rem;
+    background: $color-white;
+    @include pc {
+      display: grid;
+      grid-template-columns: 12rem minmax(0, 1fr) 14.0rem;
+      align-items: center;
+    }
+    @include sp {
+      padding: 2.0rem 1.6rem;
+    }
+    .news-label {
+      position: relative;
+      display: block;
+      @include sp {
+        margin-bottom: 1.0rem;
+      }
+      .ja {
+        position: relative;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: $color-base;
+      }
+      .en {
+        position: relative;
+        display: block;
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 3.2rem;
+        color: $color-base;
+      }
+      @include pc {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: calc(100% + 1.6rem);
+          width: 10.0rem;
+          height: 1px;
+          background: $color-base;
+        }
+      }
+    }
+    .news-content {
+      position: relative;
+      @include pc {
+        display: grid;
+        grid-template-columns: 17.4rem minmax(0, 1fr);
+        gap: 2.0rem;
+        align-items: center;
+      }
+      .meta {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
+        @include sp {
+          justify-content: flex-start;
+          gap: 1.4rem;
+          margin-bottom: 0.6rem;
+        }
+        .date {
+          position: relative;
+          display: block;
+          width: fit-content;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-primary;
+          white-space: nowrap;
+        }
+        .cat {
+          position: relative;
+          display: block;
+          width: fit-content;
+          min-width: 8.0rem;
+          padding: 0.2rem 0.8rem;
+          background: $color-gray;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-primary;
+          white-space: nowrap;
+          text-align: center;
+        }
+      }
+      .title {
+        position: relative;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        color: $color-primary;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include pc {
+          white-space: nowrap;
+        }
+        @include sp {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .news-action {
+      position: relative;
+      @include sp {
+        margin-top: 1.6rem;
+        display: none;
+      }
+      .btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem 1.0rem;
+        height: 4.8rem;
+        @include sp {
+          width: 25.0rem;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.top-service-section {
+  position: relative;
+  padding: 9.0rem 0 10.0rem;
+  @include sp {
+    padding: 7.0rem 0 8.0rem;
+  }
+  .section-title {
+    position: relative;
+  }
+  .section-content {
+    position: relative;
+    .service-list {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4.0rem 4.0rem;
+      @include sp {
+        gap: 3.2rem 2.4rem;
+      }
+      & > li {
+        position: relative;
+        flex: 0 0 auto;
+        width: calc((100% - 8.0rem) / 3);
+        @include sp {
+          width: 100%;
+        }
+      }
+    }
+    .service-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // background: $color-white;
+      border: 1px solid $color-base;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      .inner {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        z-index: 3;
+      }
+      .count {
+        position: absolute;
+        top: 1.0rem;
+        left: -1.5rem;
+        z-index: 3;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 4.2rem;
+        color: $color-base;
+        @include sp {
+          font-size: 1.8rem;
+          line-height: 3.4rem;
+          top: 0.6rem;
+          left: -1.2rem;
+        }
+        b {
+          font-size: 4.2rem;
+          font-weight: inherit;
+          line-height: inherit;
+          color: inherit;
+          @include sp {
+            font-size: 3.4rem;
+          }
+        }
+      }
+      .thumb {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 438 / 260;
+      }
+      .content {
+        position: relative;
+        padding: 2.8rem 2.8rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        color: $color-primary;
+        text-align: left;
+        @include sp {
+          padding: 2.4rem 2.4rem;
+        }
+        h3 {
+          position: relative;
+          display: block;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          margin-bottom: 1.6rem;
+          @include sp {
+            font-size: 2.2rem;
+            line-height: 3.0rem;
+            margin-bottom: 1.2rem;
+          }
+        }
+        p {
+          position: relative;
+          margin: 0;
+        }
+      }
+      .action {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 0 3.2rem;
+        @include sp {
+          padding: 0 0 2.4rem;
+        }
+        .btn {
+          position: relative;
+          min-width: 21.4rem;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .section-action {
+    position: relative;
+    margin-top: 7.2rem;
+    @include sp {
+      margin-top: 6.0rem;
+    }
+    .btn {
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+}
+
+.top-ir-section {
+  position: relative;
+  background: $color-bg-pink;
+  padding: 9.0rem 0 10.0rem;
+  overflow: hidden;
+  @include sp {
+    padding: 7.0rem 0 8.0rem;
+  }
+  .container {
+    position: relative;
+  }
+  .section-title {
+    position: relative;
+    margin-bottom: 2.0rem;
+  }
+  .section-desc {
+    position: relative;
+    margin-bottom: 6.0rem;
+    @include sp {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    .ir-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.6rem 1.6rem;
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      & > li {
+        position: relative;
+      }
+    }
+    .ir-card {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 4.8rem 1.0rem 4.8rem 1.0rem;
+      background: $color-white;
+      transition: transform 0.4s ease;
+      z-index: 0;
+      @include sp {
+        padding: 3.6rem 1.0rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .icon {
+        position: relative;
+        width: 6.8rem;
+        float: left;
+        z-index: 3;
+      }
+      .info {
+        position: relative;
+        width: calc(100% - 7.8rem);
+        float: right;
+        z-index: 3;
+        h3 {
+          position: relative;
+          display: block;
+          font-size: 2.0rem;
+          font-weight: 600;
+          line-height: 2.8rem;
+          letter-spacing: -0.04em;
+          color: $color-base;
+          margin-bottom: 0.4rem;
+          &.ls {
+            letter-spacing: -0.12em;
+          }
+          svg {
+            position: relative;
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: currentColor;
+            margin-left: 0.6rem;
+            margin-bottom: 0.3rem;
+            vertical-align: middle;
+            @include sp {
+              margin-left: 1.0rem;
+            }
+          }
+        }
+        p {
+          position: relative;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-primary;
+          margin: 0;
+          @include pc {
+            &.ls {
+              letter-spacing: -0.08em;
+              margin-right: -1.0rem;
+            }
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        inset: 0;
+        background: $color-yellow;
+        transition: transform 0.4s ease-in-out;
+        transform: scale(0, 1);
+        transform-origin: right top;
+      }
+      &:hover {
+        transform: translateY(-0.4rem);
+        &::before {
+          transform-origin: left top;
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+  .section-actions {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.0rem;
+    margin-top: 7.2rem;
+    @include sp {
+      margin-top: 6.0rem;
+      gap: 2.4rem;
+    }
+    .btn {
+      position: relative;
+      @include pc {
+        min-width: 30.0rem;
+      }
+      &::after {
+        border: none;
+      }
+    }
+  }
+}
+
+.top-sustain-section {
+  position: relative;
+  padding: 9.0rem 0 9.0rem;
+  overflow: hidden;
+  z-index: 1;
+  @include sp {
+    padding: 7.0rem 0 3.0rem;
+  }
+  .container {
+    position: relative;
+  }
+  .section-title {
+    position: relative;
+    margin-bottom: 2.0rem;
+  }
+  .section-desc {
+    position: relative;
+    margin-bottom: 5.6rem;
+    @include sp {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    .sustain-cols {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4.0rem 8.0rem;
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 3.6rem 3.2rem;
+      }
+      & > li {
+        position: relative;
+      }
+    }
+    .sustain-label {
+      position: relative;
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 3.0rem;
+      color: $color-base;
+      text-align: left;
+      margin-bottom: 3.2rem;
+      @include sp {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        margin-bottom: 2.0rem;
+      }
+    }
+    .sustain-list {
+      position: relative;
+      display: block;
+      & > li {
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+    .sustain-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.2rem;
+      width: 100%;
+      padding: 0.8rem 2.4rem 0.8rem 1.6rem;
+      border: 1px solid $color-base;
+      background: $color-white;
+      color: $color-primary;
+      transition: all 0.4s ease-in-out;
+      @include sp {
+        padding: 0.8rem 1.6rem 0.8rem 1.0rem;
+        gap: 1.0rem;
+      }
+      .icon {
+        position: relative;
+        flex: 0 0 auto;
+        width: 6.0rem;
+        z-index: 3;
+      }
+      .title {
+        position: relative;
+        flex: 0 0 auto;
+        width: fit-content;
+        max-width: calc(100% - 7.2rem);
+        font-size: 2.0rem;
+        font-weight: 600;
+        line-height: 3.0rem;
+        color: inherit;
+        white-space: nowrap;
+        transition: color 0.4s ease-in-out;
+        text-align: left;
+        z-index: 3;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        inset: 0;
+        background: $color-base;
+        transition: transform 0.4s ease-in-out;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        z-index: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 0.6rem);
+        right: 2.4rem;
+        display: block;
+        height: 1.2rem;
+        width: 7.0rem;
+        color: inherit;
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: currentColor;
+        transform: skewX(45deg);
+        transform-origin: bottom right;
+        transition: all 0.4s ease-in-out;
+        z-index: 3;
+        @include sp {
+          right: 1.6rem;
+          width: 5.0rem;
+        }
+      }
+      &:hover {
+        color: $color-white;
+        transform: translateY(-0.4rem);
+        &::before {
+          transform-origin: left top;
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+  .section-action {
+    position: relative;
+    margin-top: 7.2rem;
+    @include sp {
+      margin-top: 6.0rem;
+    }
+    .btn {
+      position: relative;
+      margin: 0 auto;
+      @include pc {
+        min-width: 32.0rem;
+      }
+    }
+  }
+}
+
+.top-contents-section {
+  position: relative;
+  padding: 9.0rem 0 11.2rem;
+  overflow: hidden;
+  z-index: 1;
+  @include sp {
+    padding: 7.0rem 0 8.0rem;
+  }
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .section-title {
+    position: relative;
+    margin-bottom: 6.0rem;
+    @include sp {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    .contents-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 4.0rem;
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+    .contents-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      background: $color-white;
+      z-index: 0;
+      .inner {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        z-index: 3;
+      }
+      .thumb {
+        position: relative;
+        display: block;
+        line-height: 1.0;
+        width: 100%;
+        aspect-ratio: 320 / 226;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        z-index: 0;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          transition: all 0.4s ease-in-out;
+          border: none;
+          margin: 0;
+        }
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+      .content {
+        position: relative;
+        padding: 2.8rem 2.8rem 2.8rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        color: $color-primary;
+        text-align: left;
+        @include sp {
+          padding: 2.6rem 2.4rem 2.8rem;
+        }
+        h3 {
+          position: relative;
+          display: block;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          text-align: left;
+          margin-bottom: 0.8rem;
+          svg {
+            position: relative;
+            display: inline-block;
+            width: 1.4rem;
+            height: 1.4rem;
+            fill: currentColor;
+            margin-left: 0.6rem;
+            margin-bottom: 0.3rem;
+            vertical-align: middle;
+            @include sp {
+              margin-left: 1.0rem;
+            }
+          }
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        p {
+          position: relative;
+          margin: 0;
+        }
+      }
+      .action {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 0 3.0rem;
+        .btn {
+          position: relative;
+          min-width: 20.0rem;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.common-cta-section {
+  position: relative;
+  padding: 7.0rem 0 7.2rem;
+  background: linear-gradient(90deg, rgba($color-yellow, 1.0) 0%, rgba($color-pink, 1.0) 100%);
+  overflow: hidden;
+  z-index: 0;
+  @include sp {
+    padding: 7.0rem 0 8.0rem;
+  }
+  .container {
+    position: relative;
+    max-width: 92.4rem;
+    z-index: 1;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .section-lead {
+    position: relative;
+    @include pc {
+      margin: 0;
+      float: left;
+      width: fit-content;
+    }
+    .en {
+      position: relative;
+      display: block;
+      font-size: 4.2rem;
+      font-weight: 600;
+      line-height: 5.0rem;
+      color: $color-white;
+      text-align: left;
+      @include sp {
+        font-size: 3.4rem;
+        line-height: 4.2rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+    .ja {
+      position: relative;
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $color-white;
+      text-align: left;
+    }
+    .line {
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 1.8rem);
+      display: block;
+      width: 37.0rem;
+      height: 1px;
+      background: $color-white;
+      z-index: 0;
+    }
+  }
+  .section-action {
+    position: relative;
+    @include pc {
+      margin: 0.6rem 0 0;
+      float: right;
+      width: fit-content;
+    }
+    @include sp {
+      margin-top: 5.0rem;
+    }
+    .btn {
+      position: relative;
+      min-width: 32.0rem;
+      background: transparent;
+      color: $color-white;
+      margin: 0 auto;
+      &::before {
+        background: $color-white;
+      }
+      .arrow {
+        color: $color-white;
+      }
+      &::after {
+        border-color: $color-white;
+      }
+      &:hover {
+        color: $color-base;
+        .arrow {
+          color: $color-base;
+        }
+      }
+    }
+  }
+}
+
+.top-deco1-bg {
+  position: relative;
+  background-image: url(../image/deco-bg1.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  @include sp {
+    background-image: url(../image/deco-bg1-sp1.png), url(../image/deco-bg1-sp2.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+  }
+}
+
+.top-deco2-bg {
+  position: relative;
+  background-image: url(../image/deco-bg2.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  @include sp {
+    background-image: url(../image/deco-bg2-sp1.png), url(../image/deco-bg2-sp2.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 45.0rem;
+    background: linear-gradient(180deg, rgba($color-yellow, 0) 0%, rgba($color-yellow, 0.1) 47%, rgba($color-pink, 0.2) 100%);
+    z-index: 0;
+    @include sp {
+      height: 171.0rem;
+    }
+  }
+}

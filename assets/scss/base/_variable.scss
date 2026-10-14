@@ -1,0 +1,55 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+$font_shippori: 'Shippori Mincho', serif;
+$font_serif: 'Noto Serif JP', serif;
+$font_noto: 'Noto Sans JP', sans-serif;
+$font_zen: 'Zen Kaku Gothic New', sans-serif;
+$font_inter: 'Inter', sans-serif;
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+$breakpoint-full: 1920px;
+
+// ==========================================================================
+// Font size
+// ==========================================================================
+$font-size-base: 1.6rem;
+$line-height-base: 1.5;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$color-base: #B10080;
+$color-primary: #040000;
+$color-pink: #AF1E87;
+$color-purple: #8472C7;
+$color-pink-deep: #BE008A;
+$color-yellow: #F5D800;
+$color-yellow-soft: #FFE100;
+$color-yellow-btn: #FFDF00;
+$color-bg-pink: #FCF0FA;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray: #CCCCCC;
+$color-muted: #B3B3B3;
+$color-map: #E6E6E6;
+$color-line: #E8E8E8;
+$color-dark: #5A5858;
+
+// ==========================================================================
+// Z-index
+// ==========================================================================
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

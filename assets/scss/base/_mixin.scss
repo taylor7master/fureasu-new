@@ -1,0 +1,17 @@
+@mixin sp {
+  @media only screen and (max-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media print, screen and (min-width: #{$breakpoint-md + 1}) {
+    @content;
+  }
+}
+
+@mixin full {
+  @media print, screen and (min-width: #{$breakpoint-full + 1}) {
+    @content;
+  }
+}
