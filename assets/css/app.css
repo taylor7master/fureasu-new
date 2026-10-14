@@ -334,8 +334,7 @@ html.is-mono .mobile-nav-overly {
 .content-in {
   position: relative;
   width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
+  max-width: 101.8rem;
 }
 
 picture,
@@ -759,6 +758,49 @@ html.lenis body {
   height: 1px;
   background: #B10080;
   z-index: 0;
+}
+
+.section-label {
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .section-label {
+    margin-bottom: 3.2rem;
+  }
+}
+.section-label .lead {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  padding: 0 0 0 2.2rem;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .section-label .lead {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.section-label .lead::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: #B10080;
+}
+.section-label .sub {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #040000;
+  text-align: left;
+  margin-top: 1.6rem;
 }
 
 .section-desc {
@@ -5092,4 +5134,1225 @@ body.mobile-nav-active #mobile-nav {
   .csr-intro .section-content .csr-block .block-actions .btn {
     margin: 0 auto;
   }
+}
+
+.athlete-intro {
+  position: relative;
+  padding: 7.2rem 0 12rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro {
+    padding: 6rem 0 10rem;
+  }
+}
+.athlete-intro .container {
+  position: relative;
+}
+.athlete-intro .section-title {
+  position: relative;
+  padding-left: 11.2rem;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-title {
+    padding-left: 7.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.athlete-intro .section-title::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 8rem;
+  height: 7.8rem;
+  background-image: url(../image/athlete/title-ext.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-title::before {
+    width: 6rem;
+    height: 5.8rem;
+  }
+}
+.athlete-intro .section-intro {
+  position: relative;
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-intro {
+    margin-bottom: 4rem;
+  }
+}
+.athlete-intro .section-intro .desc {
+  position: relative;
+  line-height: 2.6rem;
+}
+.athlete-intro .section-content {
+  position: relative;
+}
+.athlete-intro .section-content .athlete-card {
+  position: relative;
+  display: block;
+  width: 84.4rem;
+  max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card {
+    width: 100%;
+  }
+}
+.athlete-intro .section-content .athlete-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.athlete-intro .section-content .athlete-card .athlete-image {
+  position: relative;
+  display: block;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-image {
+    width: 22.4rem;
+    height: 31.2rem;
+    float: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-image {
+    width: 23rem;
+    height: auto;
+    margin: 0 auto 2.4rem;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  margin: 0;
+  border: none;
+}
+.athlete-intro .section-content .athlete-card .athlete-body {
+  position: relative;
+}
+.athlete-intro .section-content .athlete-card .athlete-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body {
+    width: calc(100% - 22.4rem - 4rem);
+    float: right;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .name {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .name {
+    float: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .name {
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .name .en {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #B10080;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .name .jp {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #B10080;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .name .jp {
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1.2rem;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .sns {
+    float: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1.2rem 1.2rem 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .sns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns > li {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns .site-link {
+  position: relative;
+  width: 10rem;
+  height: 3.2rem;
+  padding: 0;
+  border-radius: 3.2rem;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns .site-link::after {
+  border-radius: 3.2rem;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns .sns-link {
+  position: relative;
+  display: block;
+  width: 3.2rem;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns .sns-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  margin: 0;
+  border: none;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .sns .sns-link:hover {
+  opacity: 0.8;
+}
+.athlete-intro .section-content .athlete-card .athlete-body .meta {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta {
+    float: left;
+    width: 100%;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .meta > li {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta > li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 12rem minmax(0, 1fr);
+    grid-template-columns: 12rem minmax(0, 1fr);
+    padding: 0.3rem 0;
+    background: #FCF0FA;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta > li {
+    display: block;
+    min-height: 0;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .meta > li:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta > li:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .meta .label {
+  position: relative;
+  display: block;
+  color: #B10080;
+  margin: 0;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta .label {
+    padding: 0 0 0 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta .label {
+    width: 100%;
+    background: #FCF0FA;
+    padding: 0.3rem 2rem;
+  }
+}
+.athlete-intro .section-content .athlete-card .athlete-body .meta .value {
+  position: relative;
+  color: #040000;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-card .athlete-body .meta .value {
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+}
+.athlete-intro .section-content .athlete-record {
+  position: relative;
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record {
+    margin-top: 6rem;
+  }
+}
+.athlete-intro .section-content .athlete-record .record-title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  padding: 0 0 0 2.2rem;
+  margin: 0 0 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record .record-title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.athlete-intro .section-content .athlete-record .record-title::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: #B10080;
+}
+.athlete-intro .section-content .athlete-record .record-list {
+  position: relative;
+  display: block;
+  width: 84.4rem;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-record .record-list {
+    border-top: 1px solid #E8E8E8;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record .record-list {
+    width: 100%;
+  }
+}
+.athlete-intro .section-content .athlete-record .record-list > li {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .athlete-intro .section-content .athlete-record .record-list > li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 12.4rem minmax(0, 1fr);
+    grid-template-columns: 12.4rem minmax(0, 1fr);
+    border-bottom: 1px solid #E8E8E8;
+    padding: 1.2rem 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record .record-list > li {
+    display: block;
+    padding: 0;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li:not(:first-child) {
+    margin-top: 2.4rem;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li.is-cont {
+    margin-top: 1.2rem;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li::before {
+    content: "";
+    position: absolute;
+    top: 3.2rem;
+    left: 2rem;
+    bottom: -1.2rem;
+    display: block;
+    width: 1px;
+    background: #E8E8E8;
+    z-index: 0;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li.is-cont::before {
+    top: -1.2rem;
+  }
+}
+.athlete-intro .section-content .athlete-record .record-list > li .year {
+  position: relative;
+  padding: 0 0 0 3.2rem;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record .record-list > li .year {
+    padding: 0;
+  }
+}
+.athlete-intro .section-content .athlete-record .record-list > li .text {
+  position: relative;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-record .record-list > li .year {
+    margin-bottom: 1.2rem;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li.is-cont .year {
+    display: none;
+  }
+  .athlete-intro .section-content .athlete-record .record-list > li .text {
+    margin-left: 2.2rem;
+    padding: 0 0 0 2.4rem;
+  }
+}
+.athlete-intro .section-content .athlete-instagram {
+  position: relative;
+  width: 84.4rem;
+  max-width: 100%;
+  margin-top: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  .athlete-intro .section-content .athlete-instagram {
+    margin-top: 8rem;
+  }
+}
+.athlete-intro .section-content .athlete-instagram .instagram-wrapper {
+  position: relative;
+  display: block;
+  width: 62rem;
+  max-width: 100%;
+  line-height: 1;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 0;
+}
+.athlete-intro .section-content .athlete-instagram .instagram-wrapper .instagram-media {
+  position: relative;
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: transparent !important;
+}
+.athlete-intro .section-content .athlete-instagram .instagram-wrapper .instagram-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+.athlete-intro .section-content .athlete-instagram .instagram-wrapper iframe, .athlete-intro .section-content .athlete-instagram .instagram-wrapper img {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.employment-intro {
+  position: relative;
+  padding: 7.2rem 0 10rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro {
+    padding: 6rem 0 8rem;
+  }
+}
+.employment-intro .container {
+  position: relative;
+}
+.employment-intro .content-in {
+  max-width: 104rem;
+}
+.employment-intro .section-title {
+  position: relative;
+  padding-left: 9.2rem;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-title {
+    padding-left: 7.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.employment-intro .section-title::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 8rem;
+  height: 7.8rem;
+  background-image: url(../image/employment/title-ext.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-title::before {
+    width: 6rem;
+    height: 5.8rem;
+  }
+}
+.employment-intro .section-intro {
+  position: relative;
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-intro {
+    margin-bottom: 5rem;
+  }
+}
+.employment-intro .section-intro .desc {
+  position: relative;
+}
+.employment-intro .section-content {
+  position: relative;
+}
+.employment-intro .section-content .employment-list {
+  position: relative;
+  display: block;
+}
+.employment-intro .section-content .employment-list > li {
+  position: relative;
+}
+.employment-intro .section-content .employment-list > li:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-content .employment-list > li:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+.employment-intro .section-content .employment-block {
+  position: relative;
+  display: block;
+}
+.employment-intro .section-content .employment-block::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.employment-intro .section-content .employment-block .employment-image {
+  position: relative;
+  display: block;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+@media print, screen and (min-width: 769px) {
+  .employment-intro .section-content .employment-block .employment-image {
+    width: 33.6rem;
+    float: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-content .employment-block .employment-image {
+    width: 100%;
+    margin: 0 0 2.4rem;
+  }
+}
+.employment-intro .section-content .employment-block .employment-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  margin: 0;
+  border: none;
+}
+.employment-intro .section-content .employment-block .employment-body {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .employment-intro .section-content .employment-block .employment-body {
+    width: calc(100% - 33.6rem - 4.8rem);
+    float: right;
+    padding-top: 2.4rem;
+  }
+}
+.employment-intro .section-content .employment-block .employment-body .block-title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  padding: 0 0 0 2.2rem;
+  margin: 0 0 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-content .employment-block .employment-body .block-title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.employment-intro .section-content .employment-block .employment-body .block-title::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: #B10080;
+}
+.employment-intro .section-content .employment-block .employment-body .desc {
+  position: relative;
+}
+.employment-intro .section-content .employment-block .employment-body .source {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #333333;
+  margin: 1.2rem 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-content .employment-block .employment-body .source {
+    margin-top: 1rem;
+  }
+}
+.employment-intro .section-content .employment-block .employment-body .source a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .employment-intro .section-content .employment-block .employment-body .source a {
+    text-decoration: underline;
+  }
+}
+
+.research-intro {
+  position: relative;
+  padding: 7.2rem 0 8rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro {
+    padding: 6rem 0 7rem;
+  }
+}
+.research-intro .container {
+  position: relative;
+}
+.research-intro .section-title {
+  position: relative;
+  padding-left: 9.2rem;
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-title {
+    padding-left: 7.4rem;
+    margin-bottom: 3.2rem;
+  }
+}
+.research-intro .section-title::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 8rem;
+  height: 7.8rem;
+  background-image: url(../image/research/title-ext.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-title::before {
+    width: 6rem;
+    height: 5.8rem;
+  }
+}
+.research-intro .section-intro {
+  position: relative;
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-intro {
+    margin-bottom: 4rem;
+  }
+}
+.research-intro .section-intro .lead {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #B10080;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-intro .lead {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.research-intro .section-intro .desc {
+  position: relative;
+}
+.research-intro .section-content {
+  position: relative;
+}
+.research-intro .section-content .ebm-block {
+  position: relative;
+  display: block;
+  padding: 3.6rem 4.8rem 4.5rem;
+  border: 1px solid #B10080;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-content .ebm-block {
+    padding: 3.2rem 1.8rem 3.6rem;
+  }
+}
+.research-intro .section-content .ebm-block .title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: #B10080;
+  margin: 0 0 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-intro .section-content .ebm-block .title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+.research-intro .section-content .ebm-block .desc {
+  position: relative;
+}
+
+.research-goal {
+  position: relative;
+  padding: 7.2rem 0 8rem;
+  background: #FCF0FA;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal {
+    padding: 6rem 0 7rem;
+  }
+}
+.research-goal .container {
+  position: relative;
+}
+.research-goal .section-label {
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal .section-label {
+    margin-bottom: 4rem;
+  }
+}
+.research-goal .section-content {
+  position: relative;
+}
+.research-goal .section-content .goal-list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0rem, 1fr) 1.6rem minmax(0rem, 1fr);
+  grid-template-columns: repeat(2, minmax(0rem, 1fr));
+  gap: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal .section-content .goal-list {
+    -ms-grid-columns: (minmax(0rem, 1fr))[1];
+    grid-template-columns: repeat(1, minmax(0rem, 1fr));
+  }
+}
+.research-goal .section-content .goal-list > li {
+  position: relative;
+}
+.research-goal .section-content .goal-card {
+  position: relative;
+  display: block;
+  padding: 3.6rem 3.2rem 4rem;
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal .section-content .goal-card {
+    padding: 3.6rem 1.2rem 3.6rem 1.6rem;
+  }
+}
+.research-goal .section-content .goal-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.research-goal .section-content .goal-card .icon {
+  position: relative;
+  width: 8.6rem;
+  float: left;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal .section-content .goal-card .icon {
+    width: 7.6rem;
+    margin-top: 1.2rem;
+  }
+}
+.research-goal .section-content .goal-card .desc {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #B10080;
+  margin: 0;
+  width: calc(100% - 8.6rem - 2.4rem);
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .research-goal .section-content .goal-card .desc {
+    width: calc(100% - 7.6rem - 1.4rem);
+    letter-spacing: -0.025em;
+  }
+}
+
+.research-verify {
+  position: relative;
+  padding: 7.2rem 0 4rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify {
+    padding: 6rem 0 3rem;
+  }
+}
+.research-verify .container {
+  position: relative;
+}
+.research-verify .section-label {
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify .section-label {
+    margin-bottom: 4rem;
+  }
+}
+.research-verify .section-content {
+  position: relative;
+}
+.research-verify .section-content .verify-list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0rem, 1fr) 2.4rem minmax(0rem, 1fr);
+  grid-template-columns: repeat(2, minmax(0rem, 1fr));
+  gap: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify .section-content .verify-list {
+    -ms-grid-columns: minmax(0rem, 1fr);
+    grid-template-columns: repeat(1, minmax(0rem, 1fr));
+    gap: 2.4rem;
+  }
+}
+.research-verify .section-content .verify-list > li {
+  position: relative;
+}
+.research-verify .section-content .verify-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #B10080;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+.research-verify .section-content .verify-card .verify-image {
+  position: relative;
+  aspect-ratio: 486/250;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify .section-content .verify-card .verify-image {
+    aspect-ratio: 350/196;
+  }
+}
+.research-verify .section-content .verify-card .verify-body {
+  position: relative;
+  padding: 3.6rem 3.6rem 6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify .section-content .verify-card .verify-body {
+    padding: 2.4rem 1.8rem 3.2rem;
+  }
+}
+.research-verify .section-content .verify-card .verify-body .title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  margin: 0 0 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-verify .section-content .verify-card .verify-body .title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.research-verify .section-content .verify-card .verify-body .desc {
+  position: relative;
+}
+
+.research-news {
+  position: relative;
+  padding: 7.2rem 0 8rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-news {
+    padding: 6rem 0 7rem;
+  }
+}
+.research-news .container {
+  position: relative;
+}
+.research-news .section-label {
+  position: relative;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-news .section-label {
+    margin-bottom: 3.2rem;
+  }
+}
+.research-news .section-content {
+  position: relative;
+  padding: 3.6rem 4.8rem 4rem;
+  background: #FCF0FA;
+}
+@media only screen and (max-width: 768px) {
+  .research-news .section-content {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    padding: 3.2rem 1.6rem 3.6rem;
+  }
+}
+.research-news .section-content .news-list {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.research-news .section-content .news-list > li {
+  position: relative;
+}
+.research-news .section-content .news-list > li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-news .section-content .news-list > li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
+.research-news .section-content .news-list > li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.research-news .section-content .news-list > li .news-item {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .research-news .section-content .news-list > li .news-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 18rem 1rem minmax(0rem, 1fr);
+    grid-template-columns: 18rem minmax(0rem, 1fr);
+    gap: 1rem;
+  }
+}
+.research-news .section-content .news-list > li .news-item .news-meta {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9rem 0.4rem minmax(0rem, 1fr);
+  grid-template-columns: 9rem minmax(0rem, 1fr);
+  gap: 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-news .section-content .news-list > li .news-item .news-meta {
+    margin-bottom: 0.6rem;
+  }
+}
+.research-news .section-content .news-list > li .news-item .news-meta .date {
+  position: relative;
+  padding: 0.1rem 0;
+  margin: 0;
+}
+.research-news .section-content .news-list > li .news-item .news-meta .cat {
+  position: relative;
+  margin: 0;
+}
+.research-news .section-content .news-list > li .news-item .news-meta .cat span {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  background: #FFFFFF;
+}
+.research-news .section-content .news-list > li .news-item .news-title {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .research-news .section-content .news-list > li .news-item .news-title {
+    padding: 0.1rem 0;
+  }
+}
+.research-news .section-content .news-list > li .news-item .news-title span {
+  font: inherit;
+  font-weight: 400;
+}
+
+.research-notice {
+  position: relative;
+  padding: 7.2rem 0 10rem;
+  background: #FCF0FA;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-notice {
+    padding: 6rem 0 8rem;
+  }
+}
+.research-notice .container {
+  position: relative;
+}
+.research-notice .section-label {
+  position: relative;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-notice .section-label {
+    margin-bottom: 4rem;
+  }
+}
+.research-notice .section-content {
+  position: relative;
+}
+.research-notice .section-content .notice-list {
+  position: relative;
+  display: block;
+}
+.research-notice .section-content .notice-list > li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.research-notice .section-content .notice-card {
+  position: relative;
+  display: block;
+  padding: 2.4rem 2.4rem;
+  background: #FFFFFF;
+}
+@media print, screen and (min-width: 769px) {
+  .research-notice .section-content .notice-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 28rem 2rem minmax(0rem, 1fr);
+    grid-template-columns: 28rem minmax(0rem, 1fr);
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .research-notice .section-content .notice-card {
+    padding: 2.4rem 1.8rem;
+  }
+}
+.research-notice .section-content .notice-card .notice-label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #B10080;
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .research-notice .section-content .notice-card .notice-label {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 1.6rem;
+  }
+}
+.research-notice .section-content .notice-card .notice-label img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 4.8rem;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .research-notice .section-content .notice-card .notice-label img {
+    width: 4rem;
+  }
+}
+.research-notice .section-content .notice-card .notice-label span {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.research-notice .section-content .notice-card .notice-body {
+  position: relative;
+}
+.research-notice .section-content .notice-card .notice-body .list {
+  position: relative;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: notice;
+}
+@media print, screen and (min-width: 769px) {
+  .research-notice .section-content .notice-card .notice-body .list--split {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2.4rem;
+       -moz-column-gap: 2.4rem;
+            column-gap: 2.4rem;
+  }
+}
+.research-notice .section-content .notice-card .notice-body .list > li {
+  position: relative;
+  padding: 0 0 0 3rem;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
+}
+.research-notice .section-content .notice-card .notice-body .list > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.research-notice .section-content .notice-card .notice-body .list > li::before {
+  content: counter(notice);
+  counter-increment: notice;
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  padding: 0 0.1rem 0 0;
+  border-radius: 50%;
+  background: #B10080;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+}
+.research-notice .section-action {
+  position: relative;
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 768px) {
+  .research-notice .section-action {
+    margin-top: 5rem;
+  }
+}
+.research-notice .section-action .btn {
+  margin: 0 auto;
+  min-width: 20rem;
+  color: #B10080;
+}
+.research-notice .section-action .btn:hover {
+  color: #FFFFFF;
 }

@@ -1,0 +1,443 @@
+.athlete-intro {
+  position: relative;
+  padding: 7.2rem 0 12.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 10.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 11.2rem;
+    margin-bottom: 3.2rem;
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/athlete/title-ext.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-intro {
+    position: relative;
+    margin-bottom: 8.0rem;
+
+    @include sp {
+      margin-bottom: 4.0rem;
+    }
+
+    .desc {
+      position: relative;
+      line-height: 2.6rem;
+    }
+  }
+
+  .section-content {
+    position: relative;
+
+    .athlete-card {
+      position: relative;
+      display: block;
+      width: 84.4rem;
+      max-width: 100%;
+
+      @include sp {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .athlete-image {
+        position: relative;
+        display: block;
+        line-height: 1.0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        z-index: 0;
+
+        @include pc {
+          width: 22.4rem;
+          height: 31.2rem;
+          float: left;
+        }
+
+        @include sp {
+          width: 23.0rem;
+          height: auto;
+          margin: 0 auto 2.4rem;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          margin: 0;
+          border: none;
+        }
+      }
+
+      .athlete-body {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        @include pc {
+          width: calc(100% - 22.4rem - 4.0rem);
+          float: right;
+        }
+
+        .name {
+          position: relative;
+          margin-bottom: 1.8rem;
+          @include pc {
+            float: left;
+            width: fit-content;
+          }
+
+          @include sp {
+            margin-bottom: 2.4rem;
+            text-align: center;
+          }
+
+          .en {
+            position: relative;
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 3.0rem;
+            color: $color-base;
+          }
+
+          .jp {
+            position: relative;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.0rem;
+            color: $color-base;
+            margin: 0;
+
+            @include sp {
+              font-size: 2.6rem;
+              line-height: 3.9rem;
+            }
+          }
+        }
+
+        .sns {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 1.2rem;
+          @include pc {
+            float: right;
+            width: fit-content;
+            margin: 1.2rem 1.2rem 0 0;
+          }
+          @include sp {
+            justify-content: center;
+            margin-bottom: 2.4rem;
+          }
+          & > li {
+            position: relative;
+            flex: 0 0 auto;
+            width: fit-content;
+          }
+          .site-link {
+            position: relative;
+            width: 10.0rem;
+            height: 3.2rem;
+            padding: 0;
+            border-radius: 3.2rem;
+            &::after {
+              border-radius: 3.2rem;
+            }
+          }
+          .sns-link {
+            position: relative;
+            display: block;
+            width: 3.2rem;
+            padding: 0;
+            margin: 0;
+            transition: opacity 0.3s ease;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              object-position: center center;
+              margin: 0;
+              border: none;
+            }
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .meta {
+          position: relative;
+          display: block;
+          padding: 0;
+          margin: 0;
+          @include pc {
+            float: left;
+            width: 100%;
+          }
+
+          & > li {
+            position: relative;
+            @include pc {
+              display: grid;
+              grid-template-columns: 12.0rem minmax(0, 1fr);
+              padding: 0.3rem 0;
+              background: $color-bg-pink;
+            }
+            @include sp {
+              display: block;
+              min-height: 0;
+            }
+            &:not(:last-child) {
+              margin-bottom: 0.4rem;
+              @include sp {
+                margin-bottom: 1.2rem;
+              }
+            }
+          }
+
+          .label {
+            position: relative;
+            display: block;
+            color: $color-base;
+            margin: 0;
+            @include pc {
+              padding: 0 0 0 2.0rem;
+            }
+
+            @include sp {
+              width: 100%;
+              background: $color-bg-pink;
+              padding: 0.3rem 2.0rem;
+            }
+          }
+
+          .value {
+            position: relative;
+            color: $color-primary;
+            margin: 0;
+
+            @include sp {
+              margin-top: 1.0rem;
+              padding: 0 2.0rem;
+            }
+          }
+        }
+      }
+    }
+
+    .athlete-record {
+      position: relative;
+      margin-top: 6.0rem;
+
+      @include sp {
+        margin-top: 6.0rem;
+      }
+
+      .record-title {
+        position: relative;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 3.2rem;
+        color: $color-base;
+        padding: 0 0 0 2.2rem;
+        margin: 0 0 3.2rem;
+
+        @include sp {
+          font-size: 2.2rem;
+          line-height: 3.0rem;
+          margin-bottom: 2.4rem;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0.9rem;
+          left: 0;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: $color-base;
+        }
+      }
+
+      .record-list {
+        position: relative;
+        display: block;
+        width: 84.4rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        
+        @include pc {
+          border-top: 1px solid $color-line;
+        }
+        @include sp {
+          width: 100%;
+        }
+
+        & > li {
+          position: relative;
+          @include pc {
+            display: grid;
+            grid-template-columns: 12.4rem minmax(0, 1fr);
+            border-bottom: 1px solid $color-line;
+            padding: 1.2rem 0;
+          }
+
+          @include sp {
+            display: block;
+            padding: 0;
+            &:not(:first-child) {
+              margin-top: 2.4rem;
+            }
+            &.is-cont {
+              margin-top: 1.2rem;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 3.2rem;
+              left: 2.0rem;
+              bottom: -1.2rem;
+              display: block;
+              width: 1px;
+              background: $color-line;
+              z-index: 0;
+            }
+            &.is-cont::before {
+              top: -1.2rem;
+            }
+          }
+
+          .year {
+            position: relative;
+            padding: 0 0 0 3.2rem;
+            margin: 0;
+            @include sp {
+              padding: 0;
+            }
+          }
+
+          .text {
+            position: relative;
+            margin: 0;
+          }
+
+          @include sp {
+            .year {
+              margin-bottom: 1.2rem;
+            }
+
+            &.is-cont {
+              .year {
+                display: none;
+              }
+            }
+
+            .text {
+              margin-left: 2.2rem;
+              padding: 0 0 0 2.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .athlete-instagram {
+      position: relative;
+      width: 84.4rem;
+      max-width: 100%;
+      margin-top: 10.0rem;
+
+      @include sp {
+        margin-top: 8.0rem;
+      }
+
+      .instagram-wrapper {
+        position: relative;
+        display: block;
+        width: 62.0rem;
+        max-width: 100%;
+        line-height: 1.0;
+        padding: 0;
+        margin: 0 auto;
+        z-index: 0;
+
+        .instagram-media {
+          position: relative;
+          display: block;
+          width: 100% !important;
+          max-width: 100% !important;
+          min-width: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: none !important;
+          border-radius: 0 !important;
+          box-shadow: none !important;
+          background: transparent !important;
+        }
+
+        .instagram-link {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          z-index: 0;
+        }
+
+        iframe, img {
+          display: block;
+          width: 100% !important;
+          max-width: 100% !important;
+          min-width: 0 !important;
+          margin: 0 !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}

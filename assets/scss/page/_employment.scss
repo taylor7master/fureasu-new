@@ -1,0 +1,183 @@
+.employment-intro {
+  position: relative;
+  padding: 7.2rem 0 10.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 8.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    max-width: 104.0rem;
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 3.2rem;
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/employment/title-ext.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-intro {
+    position: relative;
+    margin-bottom: 8.0rem;
+
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+
+    .desc {
+      position: relative;
+    }
+  }
+
+  .section-content {
+    position: relative;
+
+    .employment-list {
+      position: relative;
+      display: block;
+
+      & > li {
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: 4.8rem;
+
+          @include sp {
+            margin-bottom: 4.0rem;
+          }
+        }
+      }
+    }
+
+    .employment-block {
+      position: relative;
+      display: block;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .employment-image {
+        position: relative;
+        display: block;
+        line-height: 1.0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        z-index: 0;
+
+        @include pc {
+          width: 33.6rem;
+          float: left;
+        }
+
+        @include sp {
+          width: 100%;
+          margin: 0 0 2.4rem;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          margin: 0;
+          border: none;
+        }
+      }
+
+      .employment-body {
+        position: relative;
+
+        @include pc {
+          width: calc(100% - 33.6rem - 4.8rem);
+          float: right;
+          padding-top: 2.4rem;
+        }
+
+        .block-title {
+          position: relative;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          padding: 0 0 0 2.2rem;
+          margin: 0 0 1.6rem;
+
+          @include sp {
+            font-size: 2.2rem;
+            line-height: 3.0rem;
+            margin-bottom: 1.6rem;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.9rem;
+            left: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            background: $color-base;
+          }
+        }
+
+        .desc {
+          position: relative;
+        }
+
+        .source {
+          position: relative;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 2.2rem;
+          color: #333333;
+          margin: 1.2rem 0 0;
+
+          @include sp {
+            margin-top: 1.0rem;
+          }
+
+          a {
+            position: relative;
+            color: inherit;
+            text-decoration: none;
+            @include sp {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

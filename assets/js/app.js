@@ -63,7 +63,7 @@
       return;
     }
     var line = getScrollOffset() + 24;
-    var current = $links.get(0);
+    var current = $links.filter('.active').get(0) || $links.get(0);
     $links.each(function() {
       var section = this.hash ? document.querySelector(this.hash) : null;
       if (section && section.getBoundingClientRect().top <= line) {
