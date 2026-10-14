@@ -1,0 +1,776 @@
+.compliance-policy {
+  position: relative;
+  padding: 7.2rem 0 8.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    max-width: 104.8rem;
+  }
+
+  .section-intro {
+    position: relative;
+    margin-bottom: 6.0rem;
+    @include sp {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 6.4rem;
+
+    @include pc {
+      width: calc(100% - 42.0rem);
+    }
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/compliance/title-ext1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-lead {
+    position: relative;
+    font-size: 3.0rem;
+    font-weight: 600;
+    line-height: 4.0rem;
+    color: $color-base;
+    margin: 0 0 3.2rem;
+
+    @include pc {
+      width: calc(100% - 42.0rem);
+    }
+
+    @include sp {
+      font-size: 2.2rem;
+      line-height: 3.0rem;
+    }
+    small {
+      position: relative;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+      @include sp {
+        font-size: 2.2rem;
+        line-height: 3.0rem;
+      }
+    }
+  }
+
+  .section-desc {
+    position: relative;
+    margin: 0;
+    @include pc {
+      width: calc(100% - 42.0rem);
+    }
+  }
+
+  .section-photo {
+    position: relative;
+    padding: 0;
+    box-shadow: -1.6rem 1.6rem 0 0 rgba($color-base, 0.24);
+    
+    @include pc {
+      position: absolute;
+      top: -1.2rem;
+      right: 4.0rem;
+      width: 39.2rem;
+    }
+
+    @include sp {
+      width: 34.0rem;
+      margin-left: auto;
+      margin-bottom: 5.6rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: #ECC2E1;
+      z-index: 0;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+  }
+
+  .section-content {
+    position: relative;
+    .policy-list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1.6rem;
+      }
+    }
+
+    .policy-card {
+      position: relative;
+      display: block;
+      height: 100%;
+      height: 100%;
+      padding: 2.0rem 2.4rem 3.2rem;
+      background: $color-white;
+      border: 1px solid $color-base;
+      z-index: 0;
+
+      @include sp {
+        padding: 2.0rem 1.8rem 2.4rem;
+      }
+
+      .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.2rem;
+        font-size: 2.0rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        color: $color-base;
+        margin: 0 0 1.6rem;
+        @include sp {
+          margin-bottom: 1.2rem;
+        }
+
+        img {
+          position: relative;
+          display: block;
+          flex: 0 0 auto;
+          width: 5.8rem;
+          height: auto;
+        }
+        
+        span {
+          position: relative;
+          display: block;
+          flex: 0 0 auto;
+          width: calc(100% - 7.0rem);
+        }
+      }
+
+      .desc {
+        position: relative;
+        margin: 0;
+      }
+    }
+
+    .policy-action {
+      position: relative;
+      display: block;
+      margin-top: 5.0rem;
+
+      @include sp {
+        margin-top: 4.0rem;
+      }
+
+      .btn {
+        min-width: 46.0rem;
+        margin: 0 auto;
+
+        @include sp {
+          min-width: 0;
+          font-size: 1.4rem;
+          width: 100%;
+          height: 5.4rem;
+        }
+      }
+    }
+
+  }
+
+  .section-privacy {
+    position: relative;
+    margin-top: 7.2rem;
+
+    @include sp {
+      margin-top: 4.8rem;
+    }
+
+    .privacy-note {
+      position: relative;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1.8rem;
+      @include sp {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .privacy-links {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.0rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      & > li {
+        position: relative;
+        flex: 0 0 auto;
+        width: fit-content;
+        @include sp {
+          width: 100%;
+        }
+      }
+
+      .btn {
+        min-width: 32.0rem;
+        height: 7.2rem;
+        font-weight: 600;
+        line-height: 2.0rem;
+        color: $color-base;
+        margin: 0 auto;
+        span {
+          text-align: left;
+        }
+        .arrow {
+          top: calc(50% + 1.7rem);
+        }
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+}
+
+.compliance-conduct {
+  position: relative;
+  padding: 7.2rem 0 8.0rem;
+  background: $color-bg-pink;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    max-width: 104.8rem;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 9.2rem;
+
+    @include pc {
+      float: left;
+      width: fit-content;
+      margin: 0;
+    }
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 4.0rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/compliance/title-ext2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+  .section-content {
+    position: relative;
+    @include pc {
+      float: right;
+      width: calc(100% - 32.0rem);
+    }
+    .conduct-list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.6rem;
+  
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+  
+    .conduct-card {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 3.6rem 2.0rem 4.0rem 1.6rem;
+      background: $color-white;
+      @include sp {
+        padding: 3.6rem 1.8rem 4.0rem 1.6rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .card-icon {
+        position: relative;
+        width: 6.4rem;
+        float: left;
+      }
+
+      .card-body {
+        position: relative;
+        width: calc(100% - 8.0rem);
+        float: right;
+
+        .title {
+          position: relative;
+          display: block;
+          font-size: 2.0rem;
+          font-weight: 600;
+          line-height: 2.8rem;
+          color: $color-base;
+          padding: 0 0 0 3.2rem;
+          margin: 0 0 0.8rem;
+          .num {
+            position: absolute;
+            top: 0.4rem;
+            left: 0;
+            display: block;
+            width: 2.0rem;
+            height: 2.0rem;
+            border-radius: 50%;
+            background: $color-base;
+            color: $color-white;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.0rem;
+            text-align: center;
+          }
+        }
+    
+    
+        .desc {
+          position: relative;
+          margin: 0;
+        }
+      }
+      
+    }
+  }
+
+}
+
+.compliance-quality {
+  position: relative;
+  padding: 7.2rem 0 8.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    max-width: 104.8rem;
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 3.2rem;
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/compliance/title-ext3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-desc {
+    position: relative;
+    margin-bottom: 7.0rem;
+    @include sp {
+      margin-bottom: 6.0rem;
+    }
+  }
+
+  .section-evaluate {
+    position: relative;
+    .evaluate-label {
+      position: relative;
+      margin-bottom: 4.8rem;
+      @include sp {
+        margin-bottom: 4.0rem;
+      }
+      .sub {
+        margin-top: 2.0rem;
+      }
+    }
+    .evaluate-content {
+      position: relative;
+      .evaluate-list {
+        position: relative;
+        display: block;
+        & > li {
+          position: relative;
+          &:not(:last-child) {
+            margin-bottom: 3.0rem;
+          }
+        }
+      }
+      .evaluate-box {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 1px solid $color-base;
+        z-index: 0;
+        .box-head {
+          position: relative;
+          display: block;
+          padding: 1.2rem 2.4rem;
+          background: $color-base;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-white;
+          text-align: center;
+          @include sp {
+            padding: 1.0rem 1.8rem;
+          }
+        }
+        .box-body {
+          position: relative;
+          padding: 3.0rem 3.0rem;
+          @include sp {
+            padding: 1.6rem 1.6rem;
+          }
+          .cards {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2.4rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            @include sp {
+              grid-template-columns: repeat(1, minmax(0, 1fr));
+              gap: 1.6rem;
+            }
+            & > li {
+              position: relative;
+            }
+          }
+          .card {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: $color-bg-pink;
+            padding: 2.0rem 2.0rem 3.2rem;
+            margin: 0;
+            z-index: 0;
+            @include sp {
+              padding: 1.6rem 1.6rem 2.4rem;
+            }
+            .photo {
+              position: relative;
+              width: 100%;
+              aspect-ratio: 441 / 154;
+              @include sp {
+                aspect-ratio: 294 / 184;
+              }
+            }
+            .content {
+              position: relative;
+              margin-top: 2.0rem;
+              h5 {
+                position: relative;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 3.2rem;
+                color: $color-base;
+                margin: 0 0 1.2rem;
+                @include sp {
+                  font-size: 2.2rem;
+                  line-height: 3.0rem;
+                }
+              }
+              p {
+                position: relative;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-elearn {
+    position: relative;
+    margin-top: 7.0rem;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .elearn-label {
+      position: relative;
+      @include pc {
+        float: left;
+        width: calc(100% - 44.0rem);
+        margin: 1.8rem 0 0 0;
+      }
+      @include sp {
+        margin-bottom: 2.4rem;
+      }
+      .sub {
+        margin-top: 2.0rem;
+      }
+    }
+    .elearn-photo {
+      position: relative;
+      @include pc {
+        width: 38.0rem;
+        float: right;
+      }
+    }
+  }
+
+  .section-lab {
+    position: relative;
+    margin-top: 9.0rem;
+    @include sp {
+      margin-top: 7.0rem;
+    }
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .lab-label {
+      position: relative;
+      @include pc {
+        float: right;
+        width: calc(100% - 26.6rem - 4.8rem);
+        margin: 0;
+      }
+      @include sp {
+        margin-bottom: 2.4rem;
+      }
+      .sub {
+        margin-top: 2.0rem;
+      }
+    }
+    .lab-photo {
+      position: relative;
+      @include pc {
+        float: left;
+        width: 26.6rem;
+      }
+    }
+    .lab-action {
+      position: relative;
+      @include pc {
+        float: right;
+        width: calc(100% - 26.6rem - 4.8rem);
+        margin-top: 5.0rem;
+      }
+      @include sp {
+        margin-top: 4.0rem;
+      }
+      .btn {
+        min-width: 24.0rem;
+        @include sp {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.compliance-prevention {
+  position: relative;
+  padding: 7.2rem 0 10.0rem;
+  background: $color-bg-pink;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    max-width: 104.8rem;
+  }
+
+  .section-title {
+    position: relative;
+    padding-left: 9.2rem;
+    margin-bottom: 3.6rem;
+
+    @include sp {
+      padding-left: 7.4rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0;
+      width: 8.0rem;
+      height: 7.8rem;
+      background-image: url(../image/compliance/title-ext4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+
+      @include sp {
+        width: 6.0rem;
+        height: 5.8rem;
+      }
+    }
+  }
+
+  .section-intro {
+    position: relative;
+    margin-bottom: 5.0rem;
+    @include sp {
+      margin-bottom: 4.0rem;
+    }
+    .lead {
+      position: relative;
+      font-size: 3.0rem;
+      font-weight: 600;
+      line-height: 4.0rem;
+      color: $color-base;
+      margin: 0 0 3.2rem;
+      @include sp {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 2.0rem;
+      }
+    }
+    .desc {
+      position: relative;
+    }
+  }
+  .section-content {
+    position: relative;
+    padding: 3.0rem 4.0rem;
+    background: $color-white;
+    @include sp {
+      padding: 2.0rem 1.6rem;
+    }
+    .prevention-list {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      & > li {
+        position: relative;
+        padding: 0 3.6rem;
+        @include sp {
+          padding: 0 1.6rem;
+        }
+        &:not(:last-child) {
+          padding-bottom: 1.6rem;
+          border-bottom: 1px solid $color-line;
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+
+  
+}

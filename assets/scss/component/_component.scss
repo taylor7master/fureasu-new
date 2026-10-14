@@ -127,6 +127,13 @@
   }
 }
 
+.btn--base {
+  color: $color-base;
+  &:hover {
+    color: $color-white;
+  }
+}
+
 .btn--fill {
   color: $color-white;
   background: $color-base;
