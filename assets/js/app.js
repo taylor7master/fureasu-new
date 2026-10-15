@@ -422,15 +422,38 @@
   });
   }
 
+  $(document).on('click', '.category-indexs .index-link', function(e) {
+    if (!isSidebarIndexSp()) {
+      return;
+    }
+    var $box = $(this).closest('.category-indexs');
+    if (!$box.hasClass('is-open') || $(this).hasClass('active')) {
+      e.preventDefault();
+      $box.toggleClass('is-open');
+      return;
+    }
+    $box.find('.index-link').removeClass('active');
+    $(this).addClass('active');
+    $box.removeClass('is-open');
+    if (!this.hash || this.hash === '#') {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        e.preventDefault();
+      }
+    }
+  });
+
   $(document).on('click', function(e) {
     if (!$(e.target).closest('.page-sidebar').length) {
       $('.page-sidebar').removeClass('is-open');
+    }
+    if (!$(e.target).closest('.category-indexs').length) {
+      $('.category-indexs').removeClass('is-open');
     }
   });
 
   $(window).on('scroll resize', function() {
     if (!isSidebarIndexSp()) {
-      $('.page-sidebar').removeClass('is-open');
+      $('.page-sidebar, .category-indexs').removeClass('is-open');
     }
     syncSidebarIndex();
   });

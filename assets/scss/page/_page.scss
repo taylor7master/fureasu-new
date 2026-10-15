@@ -1,0 +1,158 @@
+.page-article {
+    position: relative;
+    padding: 8.0rem 0 12.0rem;
+    background-image: url(../image/page/page-deco01.png), url(../image/page/page-deco02.png);
+    background-size: 13.6rem 20.4rem, 19.8rem 19.8rem;
+    background-repeat: no-repeat;
+    background-position: top 46.8rem right 7.5rem, bottom 8.2rem right 5.0rem;
+    @include sp {
+      padding: 6.0rem 0 10.0rem;
+      background-image: url(../image/page/page-deco01-sp.png);
+      background-size: 6.6rem 8.6rem, 16.4rem 16.4rem;
+      background-repeat: no-repeat;
+      background-position: top 5.4rem right 1.4rem;
+    }
+    .container {
+      position: relative;
+      @include pc {
+        max-width: 100%;
+        padding: 0 7.5rem;
+      }
+    }
+    .section-title {
+      position: relative;
+      margin-left: 0;
+      margin-bottom: 12.0rem;
+      @include sp {
+        margin-bottom: 5.0rem;
+      }
+    }
+    .section-content {
+      position: relative;
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $color-primary;
+      text-align: left;
+      width: 100%;
+      max-width: 112.0rem;
+      margin: 0 auto;
+      .article-lead {
+        position: relative;
+      }
+      .article-block {
+        position: relative;
+        margin-top: 5.0rem;
+        @include sp {
+          margin-top: 4.0rem;
+        }
+        .block-lead {
+          position: relative;
+          display: block;
+          font-size: 2.0rem;
+          font-weight: 500;
+          line-height: 2.8rem;
+          color: $color-base;
+          text-decoration: underline;
+          text-underline-offset: 0.5rem;
+          text-align: left;
+          margin-bottom: 2.0rem;
+          @include sp {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 1.6rem;
+          }
+        }
+        .block-content {
+          position: relative;
+          p:not(:last-child) {
+            margin-bottom: 2.4rem;
+          }
+          h4 {
+            position: relative;
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.6rem;
+            color: $color-base;
+            text-align: left;
+            margin: 2.4rem 0;
+          }
+          b {
+            font-weight: 700;
+          }
+          span {
+            font-weight: 400;
+          }
+          ol {
+            position: relative;
+            display: block;
+            margin: 2.4rem 0;
+            @include pc {
+              padding-left: 3.0rem;
+            }
+            & > li {
+              position: relative;
+              display: block;
+              padding: 0 0 0 1.6rem;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0.2rem;
+                left: 0;
+                bottom: 0.2rem;
+                display: block;
+                width: 0.4rem;
+                background: $color-base;
+              }
+              &:not(:last-child) {
+                margin-bottom: 1.6rem;
+                @include sp {
+                  margin-bottom: 1.2rem;
+                }
+              }
+            }
+          }
+          .cta-lead {
+            position: relative;
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.6rem;
+            color: $color-base;
+            text-align: left;
+            margin: 3.0rem 0 1.6rem;
+          }
+          .cta-box {
+            position: relative;
+            padding: 1.8rem 3.0rem;
+            background: rgba(#FDF7CC, 0.3);
+            width: 100%;
+            @include pc {
+              margin-left: 3.0rem;
+              width: fit-content;
+              max-width: 100%;
+            }
+            @include sp {
+              padding: 1.8rem 1.6rem 1.8rem 1.8rem;
+            }
+            dl {
+              position: relative;
+              display: grid;
+              grid-template-columns: auto minmax(0, 1fr);
+              & + dl {
+                margin-top: 1.0rem;
+              }
+            }
+            dt {
+              font-weight: 600;
+            }
+            dd {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }

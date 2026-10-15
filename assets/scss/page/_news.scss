@@ -1,0 +1,206 @@
+.page-news {
+  position: relative;
+  padding: 8.0rem 0 10.0rem;
+  background-image: url(../image/blog/page-deco02.png), url(../image/blog/page-deco03.png);
+  background-size: 13.6rem 20.4rem, 27.6rem 27.6rem;
+  background-repeat: no-repeat;
+  background-position: top 21.4rem right 7.5rem, bottom 10.2rem left -0.3rem;
+  @include sp {
+    padding: 6.0rem 0 8.0rem;
+    background-image: url(../image/blog/page-deco02-sp.png), url(../image/blog/page-deco03.png);
+    background-size: 18.4rem 19.0rem, 16.4rem 16.4rem;
+    background-repeat: no-repeat;
+    background-position: top 46.4rem left -0.5rem, bottom 11.8rem left -2.7rem;
+  }
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 100%;
+      padding: 0 7.5rem;
+    }
+  }
+  .section-title {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 12.0rem;
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+  }
+  .section-header {
+    position: relative;
+    margin-bottom: 5.6rem;
+    @include sp {
+      min-height: 4.8rem;
+      margin-bottom: 4.0rem;
+      z-index: 4;
+      &::before {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: $color-base;
+      z-index: 0;
+    }
+  }
+  .section-content {
+    position: relative;
+    .news-list {
+      position: relative;
+      display: block;
+      & > li {
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 4.0rem;
+        }
+      }
+    }
+    
+    .news-card {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      z-index: 0;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .thumb {
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 336 / 190;
+        background: #C4C4C4;
+        margin: 0;
+        z-index: 0;
+        img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease-in-out;
+          z-index: 0;
+        }
+      }
+      .link {
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+        @include pc {
+          float: left;
+          width: 34.3rem;
+          border-left: 0.7rem solid $color-base;
+        }
+        @include sp {
+          border-top: 0.7rem solid $color-base;
+        }
+        &:hover {
+          .thumb img {
+            transform: scale(1.05);
+          }
+        }
+      }
+      .content {
+        position: relative;
+        padding: 0;
+        @include pc {
+          float: right;
+          width: calc(100% - 34.3rem - 3.0rem);
+          margin-top: 1.6rem;
+        }
+        @include sp {
+          margin-top: 2.0rem;
+        }
+        .meta {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1.2rem 2.4rem;
+          margin-bottom: 2.0rem;
+          @include sp {
+            gap: 1.2rem 2.0rem;
+            margin-bottom: 1.6rem;
+          }
+          & > li {
+            position: relative;
+            flex: 0 0 auto;
+            width: fit-content;
+            max-width: 100%;
+            .cat {
+              position: relative;
+              display: block;
+              width: 14.8rem;
+              background: $color-white;
+              border: 0.1rem solid $color-base;
+              padding: 0.7rem 1.6rem;
+              font-size: 1.4rem;
+              font-weight: 600;
+              line-height: 2.0rem;
+              text-align: center;
+              color: $color-base;
+              white-space: nowrap;
+              text-decoration: none;
+              margin: 0;
+              z-index: 0;
+            }
+            .date {
+              position: relative;
+              display: block;
+              width: fit-content;
+              max-width: 100%;
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 2.4rem;
+              color: $color-primary;
+              text-align: left;
+              text-decoration: none;
+              margin: 0;
+            }
+          }
+        }
+        .title {
+          position: relative;
+          display: block;
+          font-size: 2.0rem;
+          font-weight: 600;
+          line-height: 2.8rem;
+          letter-spacing: -0.05em;
+          color: $color-primary;
+          text-align: left;
+          margin: 0;
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .desc {
+          position: relative;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-primary;
+          text-align: left;
+          margin: 1.6rem 0 0;
+        }
+      }
+    }
+  }
+}

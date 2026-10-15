@@ -1,0 +1,210 @@
+.page-blog {
+  position: relative;
+  padding: 8.0rem 0 10.0rem;
+  background-image: url(../image/blog/page-deco01.png), url(../image/blog/page-deco02.png), url(../image/blog/page-deco03.png);
+  background-size: 35.2rem 56.2rem, 13.6rem 20.4rem, 27.6rem 27.6rem;
+  background-repeat: no-repeat;
+  background-position: top -11.2rem left -3.0rem, top 46.8rem right 7.5rem, bottom 10.2rem left -0.3rem;
+  @include sp {
+    padding: 6.0rem 0 8.0rem;
+    background-image: url(../image/blog/page-deco02-sp.png), url(../image/blog/page-deco03.png);
+    background-size: 18.4rem 19.0rem, 16.4rem 16.4rem;
+    background-repeat: no-repeat;
+    background-position: top 46.4rem left -0.5rem, bottom 11.8rem left -2.7rem;
+  }
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 100%;
+      padding: 0 7.5rem;
+    }
+  }
+  .section-title {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 12.0rem;
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+  }
+  .section-pickup {
+    position: relative;
+    margin-bottom: 10.0rem;
+    @include pc {
+      width: 100%;
+      max-width: 120.0rem;
+    }
+    @include sp {
+      margin-bottom: 6.0rem;
+    }
+    .pickup-block {
+      position: relative;
+      display: block;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .thumb {
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        background: #C4C4C4;
+        aspect-ratio: 448 / 300;
+        margin: 0;
+        z-index: 0;
+        @include pc {
+          width: 44.8rem;
+          float: left;
+        }
+        @include sp {
+          margin-top: 4.0rem;
+        }
+        img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease-in-out;
+          z-index: 0;
+        }
+      }
+      .link {
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+        &:hover {
+          .thumb img {
+            transform: scale(1.05);
+          }
+        }
+      }
+      .cat {
+        position: absolute;
+        top: 2.0rem;
+        left: 2.0rem;
+        padding: 0.7rem 1.6rem;
+        width: 14.8rem;
+        background: $color-white;
+        border: 0.1rem solid $color-base;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2.0rem;
+        text-align: center;
+        color: $color-base;
+        white-space: nowrap;
+        z-index: 2;
+      }
+      .content {
+        position: relative;
+        display: block;
+        @include pc {
+          float: right;
+          width: calc(100% - 44.8rem - 6.0rem);
+        }
+        .label {
+          position: relative;
+          display: block;
+          font-size: 2.0rem;
+          font-weight: 600;
+          line-height: 2.8rem;
+          color: $color-base;
+          text-align: left;
+          margin: 0 0 2.4rem;
+        }
+        .date {
+          position: relative;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.5;
+          color: $color-primary;
+          text-align: left;
+          margin: 0 0 1.2rem;
+          @include sp {
+            margin: 0 0 1.0rem;
+          }
+        }
+        .title {
+          position: relative;
+          display: block;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-primary;
+          text-align: left;
+          margin: 0;
+          @include sp {
+            font-size: 2.0rem;
+            line-height: 2.8rem;
+          }
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .desc {
+          position: relative;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-primary;
+          text-align: left;
+          margin: 1.6rem 0 0;
+          @include sp {
+            font-size: 1.4rem;
+            margin: 1.6rem 0 0;
+          }
+        }
+        .action {
+          position: relative;
+          display: block;
+          margin: 3.6rem 0 0;
+          @include sp {
+            margin: 2.4rem 0 0;
+          }
+          .btn {
+            position: relative;
+            font-weight: 600;
+            min-width: 20.0rem;
+            @include sp {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-header {
+    position: relative;
+    margin-bottom: 5.6rem;
+    @include sp {
+      min-height: 4.8rem;
+      margin-bottom: 4.0rem;
+      z-index: 4;
+      &::before {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: $color-base;
+      z-index: 0;
+    }
+  }
+  .section-content {
+    position: relative;
+  }
+}
