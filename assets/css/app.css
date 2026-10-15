@@ -7202,3 +7202,342 @@ body.mobile-nav-active #mobile-nav {
   border-bottom: 1px solid #E8E8E8;
   margin-bottom: 1.6rem;
 }
+
+.service-page {
+  position: relative;
+  padding: 11.2rem 0 10rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: left;
+  background-image: url(../image/service/page-deco01.png), url(../image/service/page-deco02.png), url(../image/service/page-deco02.png), url(../image/service/page-deco03.png);
+  background-size: 39.8rem 14.2rem, 14.5rem 15rem, 14.5rem 15rem, 24.2rem 32.4rem;
+  background-repeat: no-repeat;
+  background-position: top 4rem left 12.4rem, top 1rem right 4.2rem, bottom 48% left 3rem, bottom 28% right 4rem;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  .service-page {
+    padding: 6rem 0 8rem;
+    background-image: url(../image/title-deco-sp.png);
+    background-size: 28.4rem auto;
+    background-repeat: no-repeat;
+    background-position: top -1rem center;
+  }
+}
+.service-page .container {
+  position: relative;
+}
+.service-page .content-in {
+  position: relative;
+  max-width: 110.4rem;
+  margin: 0 auto;
+}
+.service-page .section-lead {
+  position: relative;
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-lead {
+    margin-bottom: 5rem;
+  }
+}
+.service-page .section-lead .jp {
+  position: relative;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.6rem;
+  color: #B10080;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-lead .jp {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
+}
+.service-page .section-content {
+  position: relative;
+}
+.service-page .section-content .service-list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 2rem minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-list {
+    -ms-grid-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 3rem;
+  }
+}
+.service-page .section-content .service-list > li {
+  position: relative;
+}
+@media print, screen and (min-width: 769px) {
+  .service-page .section-content .service-list > li.full {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+  }
+}
+.service-page .section-content .service-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #B10080;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+.service-page .section-content .service-card .card-thumb {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 540/248;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-thumb {
+    aspect-ratio: 350/240;
+  }
+}
+.service-page .section-content .service-card .card-body {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.6rem 3rem 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-body {
+    padding: 1.6rem 1.8rem 3.2rem;
+  }
+}
+.service-page .section-content .service-card .card-body .inner {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  width: 100%;
+}
+.service-page .section-content .service-card .card-body .count {
+  position: relative;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  color: #B10080;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-body .count {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+}
+.service-page .section-content .service-card .card-body .count b {
+  position: relative;
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: inherit;
+  color: inherit;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-body .count b {
+    font-size: 3.2rem;
+  }
+}
+.service-page .section-content .service-card .card-body .title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  margin: 0 0 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-body .title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.service-page .section-content .service-card .card-body .desc {
+  position: relative;
+}
+.service-page .section-content .service-card .card-body .action {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  margin-top: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-body .action {
+    margin-top: 3rem;
+  }
+}
+.service-page .section-content .service-card .card-body .action .btn {
+  min-width: 21.4rem;
+  margin: 0 auto;
+}
+.service-page .section-content .service-card .card-store {
+  position: relative;
+  width: 100%;
+  padding: 2.8rem 2.4rem 3rem;
+  background: #FCF0FA;
+  margin-top: 3rem;
+}
+@media print, screen and (min-width: 769px) {
+  .service-page .section-content .service-card .card-store {
+    float: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-store {
+    padding: 2.4rem 1.6rem 3rem;
+    margin-top: 3rem;
+  }
+}
+.service-page .section-content .service-card .card-store .store-label {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  color: #B10080;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card .card-store .store-label {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.service-page .section-content .service-card .card-store .store-desc {
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+.service-page .section-content .service-card .card-store .store-action {
+  position: relative;
+  margin-top: 2.4rem;
+}
+.service-page .section-content .service-card .card-store .store-action .btn {
+  position: relative;
+  min-width: 21.4rem;
+  margin: 0 auto;
+}
+.service-page .section-content .service-card.full-card {
+  display: block;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  padding: 3rem 3rem 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card.full-card {
+    padding: 2.4rem 1.8rem 3.2rem;
+  }
+}
+.service-page .section-content .service-card.full-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.service-page .section-content .service-card.full-card .card-thumb {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+}
+@media print, screen and (min-width: 769px) {
+  .service-page .section-content .service-card.full-card .card-thumb {
+    width: 36.4rem;
+    aspect-ratio: 364/248;
+    float: right;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card.full-card .card-thumb {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.service-page .section-content .service-card.full-card .card-body {
+  padding: 0;
+  display: block;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+@media print, screen and (min-width: 769px) {
+  .service-page .section-content .service-card.full-card .card-body {
+    float: left;
+    width: calc(100% - 36.4rem - 3rem);
+  }
+}
+.service-page .section-content .service-card.full-card .card-body .inner {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card.full-card .card-body .title {
+    margin-bottom: 2rem;
+  }
+}
+.service-page .section-content .service-card.full-card .card-body .action {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .service-page .section-content .service-card.full-card .card-body .action {
+    margin-top: 2rem;
+  }
+}
+@media print, screen and (min-width: 769px) {
+  .service-page .section-content .service-card.full-card .card-body .action .btn {
+    margin: 0;
+  }
+}

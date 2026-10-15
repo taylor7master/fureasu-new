@@ -1,0 +1,273 @@
+.service-page {
+  position: relative;
+  padding: 11.2rem 0 10.0rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: left;
+  background-image: url(../image/service/page-deco01.png), url(../image/service/page-deco02.png), url(../image/service/page-deco02.png), url(../image/service/page-deco03.png);
+  background-size: 39.8rem 14.2rem, 14.5rem 15.0rem, 14.5rem 15.0rem, 24.2rem 32.4rem;
+  background-repeat: no-repeat;
+  background-position: top 4.0rem left 12.4rem, top 1.0rem right 4.2rem, bottom 48% left 3.0rem, bottom 28% right 4.0rem;
+  z-index: 0;
+
+  @include sp {
+    padding: 6.0rem 0 8.0rem;
+    background-image: url(../image/title-deco-sp.png);
+    background-size: 28.4rem auto;
+    background-repeat: no-repeat;
+    background-position: top -1.0rem center;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .content-in {
+    position: relative;
+    max-width: 110.4rem;
+    margin: 0 auto;
+  }
+
+  .section-lead {
+    position: relative;
+    margin-bottom: 8.0rem;
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+    .jp {
+      position: relative;
+      font-size: 4.2rem;
+      font-weight: 600;
+      line-height: 5.6rem;
+      color: $color-base;
+      text-align: center;
+      @include sp {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+
+  .section-content {
+    position: relative;
+    .service-list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.0rem 2.0rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      @include sp {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 3.0rem;
+      }
+  
+      & > li {
+        position: relative;
+        @include pc {
+          &.full {
+            grid-column: 1 / span 2;
+          }
+        }
+      }
+    }
+  
+    .service-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      background: $color-white;
+      border: 1px solid $color-base;
+      padding: 0;
+      margin: 0;
+      z-index: 0;
+  
+      .card-thumb {
+        position: relative;
+        flex: 0 0 auto;
+        width: 100%;
+        aspect-ratio: 540 / 248;
+        margin: 0;
+        @include sp {
+          aspect-ratio: 350 / 240;
+        }
+      }
+  
+      .card-body {
+        position: relative;
+        flex: 1 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.6rem 3.0rem 3.6rem;
+        @include sp {
+          padding: 1.6rem 1.8rem 3.2rem;
+        }
+        .inner {
+          position: relative;
+          flex: 1 auto;
+          width: 100%;
+        }
+        .count {
+          position: relative;
+          margin: 0;
+          font-size: 2.4rem;
+          font-weight: 400;
+          line-height: 4.2rem;
+          color: $color-base;
+      
+          @include sp {
+            font-size: 2.0rem;
+            line-height: 3.2rem;
+          }
+      
+          b {
+            position: relative;
+            font-size: 4.2rem;
+            font-weight: 400;
+            line-height: inherit;
+            color: inherit;
+      
+            @include sp {
+              font-size: 3.2rem;
+            }
+          }
+        }
+        .title {
+          position: relative;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          margin: 0 0 1.6rem;
+          @include sp {
+            font-size: 2.2rem;
+            line-height: 3.0rem;
+          }
+        }
+        .desc {
+          position: relative;
+        }
+        .action {
+          position: relative;
+          flex: 0 0 auto;
+          width: 100%;
+          margin-top: 3.2rem;
+          @include sp {
+            margin-top: 3.0rem;
+          }
+          .btn {
+            min-width: 21.4rem;
+            margin: 0 auto;
+          }
+        }
+      }
+      .card-store {
+        position: relative;
+        width: 100%;
+        padding: 2.8rem 2.4rem 3.0rem;
+        background: $color-bg-pink;
+        margin-top: 3.0rem;
+        @include pc {
+          float: left;
+        }
+        @include sp {
+          padding: 2.4rem 1.6rem 3.0rem;
+          margin-top: 3.0rem;
+        }
+        .store-label {
+          position: relative;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          color: $color-base;
+          text-align: center;
+          margin-bottom: 1.0rem;
+          @include sp {
+            font-size: 2.2rem;
+            line-height: 3.0rem;
+          }
+        }
+        .store-desc {
+          position: relative;
+          text-align: center;
+          margin: 0;
+        }
+        .store-action {
+          position: relative;
+          margin-top: 2.4rem;
+          .btn {
+            position: relative;
+            min-width: 21.4rem;
+            margin: 0 auto;
+          }
+        }
+      }
+      &.full-card {
+        display: block;
+        flex-direction: unset;
+        justify-content: unset;
+        padding: 3.0rem 3.0rem 3.6rem;
+        @include sp {
+          padding: 2.4rem 1.8rem 3.2rem;
+        }
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .card-thumb {
+          flex: unset;
+          @include pc {
+            width: 36.4rem;
+            aspect-ratio: 364 / 248;
+            float: right;
+          }
+          @include sp {
+            width: 100%;
+            margin-bottom: 2.0rem;
+          }
+        }
+        .card-body {
+          padding: 0;
+          display: block;
+          flex-direction: unset;
+          justify-content: unset;
+          @include pc {
+            float: left;
+            width: calc(100% - 36.4rem - 3.0rem);
+          }
+          .inner {
+            flex: unset;
+            width: 100%;
+          }
+          @include sp {
+            .title {
+              margin-bottom: 2.0rem;
+            }
+          }
+          .action {
+            flex: unset;
+            width: 100%;
+            @include sp {
+              margin-top: 2.0rem;
+            }
+            @include pc {
+              .btn {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
