@@ -1,0 +1,245 @@
+.page-access {
+  position: relative;
+  padding: 8.0rem 0 12.0rem;
+  @include sp {
+    padding: 6.0rem 0 10.0rem;
+  }
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 100%;
+      padding: 0 7.5rem;
+    }
+  }
+  .section-title {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 8.0rem;
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    width: 100%;
+    max-width: 128.0rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $color-primary;
+    .access-block {
+      position: relative;
+      & + .access-block {
+        margin-top: 8.0rem;
+        @include sp {
+          margin-top: 6.0rem;
+        }
+      }
+    }
+    .block-lead {
+      position: relative;
+      display: block;
+      font-size: 3.0rem;
+      font-weight: 600;
+      line-height: 3.6rem;
+      color: $color-base;
+      text-align: left;
+      margin-bottom: 2.0rem;
+      @include sp {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 2.0rem;
+      }
+    }
+    .block-content {
+      position: relative;
+      p {
+        position: relative;
+      }
+    }
+    .group {
+      position: relative;
+      display: block;
+      & + .group {
+        margin-top: 4.0rem;
+      }
+    }
+    .lead {
+      position: relative;
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.6rem;
+      color: $color-primary;
+      text-align: left;
+      margin: 0 0 1.2rem;
+    }
+    
+    .notice-box {
+      position: relative;
+      margin-top: 2.0rem;
+      padding: 2.4rem 3.0rem 2.6rem;
+      background: rgba(#FDF7CC, 0.3);
+      @include pc {
+        width: fit-content;
+        max-width: 100%;
+      }
+      @include sp {
+        padding: 1.8rem 1.6rem 1.8rem 1.8rem;
+      }
+      h4 {
+        position: relative;
+        font-size: 2.0rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        color: $color-primary;
+        margin-bottom: 1.0rem;
+      }
+    }
+    .tool-list {
+      position: relative;
+      display: block;
+      margin: 2.0rem 0 0;
+      padding: 0;
+      list-style: none;
+      @include pc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.0rem;
+      }
+      & > li {
+        position: relative;
+        @include pc {
+          flex: 0 0 auto;
+          width: fit-content;
+        }
+        @include sp {
+          & + li {
+            margin-top: 1.6rem;
+          }
+        }
+      }
+      .btn {
+        font-size: 1.6rem;
+        font-weight: 600;
+        @include pc {
+          min-width: 41.0rem;
+        }
+        @include sp {
+          width: 100%;
+          padding: 1.0rem 1.6rem;
+        }
+        svg {
+          position: relative;
+          display: inline-block;
+          width: 1.0rem;
+          height: 1.0rem;
+          margin-left: 0.8rem;
+          margin-bottom: 0.2rem;
+          color: inherit;
+          path {
+            transition: fill 0.4s ease;
+          }
+        }
+      }
+    }
+    .step-list {
+      position: relative;
+      margin: 2.0rem 0 0;
+      padding: 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $color-base;
+      list-style: none;
+      counter-reset: step;
+      @include pc {
+        width: 100%;
+        max-width: 100.0rem;
+      }
+
+      & > li {
+        position: relative;
+        display: block;
+        padding-left: 2.0rem;
+        counter-increment: step;
+        &::before {
+          content: counter(step);
+          position: absolute;
+          left: 0;
+          top: calc(50% - 2.0rem);
+          width: 4.0rem;
+          height: 4.0rem;
+          background: $color-base;
+          color: $color-white;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 4.0rem;
+          text-align: center;
+          z-index: 1;
+        }
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+          &::after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 1.5rem);
+            bottom: -2.4rem;
+            width: 0;
+            height: 0;
+            border-left: 1.5rem solid transparent;
+            border-right: 1.5rem solid transparent;
+            border-top: 2.4rem solid $color-base;
+            z-index: 1;
+          }
+        }
+        p {
+          position: relative;
+          margin: 0;
+          color: $color-base;
+        }
+      }
+      .step {
+        position: relative;
+        padding: 1.8rem 1.8rem 1.8rem 6.0rem;
+        background: rgba(#FDF7CC, 0.3);
+        background: #FEFDF0;
+        @include sp {
+          padding: 1.6rem 1.6rem 1.6rem 3.2rem;
+        }
+      }
+    }
+    .zoom-list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3.0rem;
+      margin-top: 2.4rem;
+      @include pc {
+        width: 100%;
+        max-width: 109.0rem;
+      }
+      @include sp {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.0rem;
+      }
+    }
+    .zoom-card {
+      position: relative;
+      padding: 2.4rem 3.0rem 2.6rem;
+      background: rgba(#FDF7CC, 0.3);
+      @include sp {
+        padding: 1.8rem 1.6rem 1.8rem 1.8rem;
+      }
+      h4 {
+        position: relative;
+        font-size: 2.0rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        color: $color-primary;
+        margin-bottom: 1.0rem;
+      }
+    }
+  }
+}

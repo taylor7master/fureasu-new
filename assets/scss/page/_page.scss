@@ -41,6 +41,14 @@
       .article-lead {
         position: relative;
       }
+      .article-sign {
+        position: relative;
+        margin-top: 5.0rem;
+        p {
+          position: relative;
+          margin: 0;
+        }
+      }
       .article-block {
         position: relative;
         margin-top: 5.0rem;
@@ -63,11 +71,26 @@
             line-height: 2.4rem;
             margin-bottom: 1.6rem;
           }
+          &--mark {
+            position: relative;
+            padding-left: 1.6rem;
+            text-decoration: none;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0.2rem;
+              left: 0;
+              bottom: 0.2rem;
+              display: block;
+              width: 0.4rem;
+              background: $color-base;
+            }
+          }
         }
         .block-content {
           position: relative;
           p:not(:last-child) {
-            margin-bottom: 2.4rem;
+            margin-bottom: 1.6rem;
           }
           h4 {
             position: relative;
@@ -85,12 +108,32 @@
           span {
             font-weight: 400;
           }
+          @include pc {
+            .pc-ls {
+              letter-spacing: -0.025em;
+            }
+          }
           ol {
             position: relative;
             display: block;
-            margin: 2.4rem 0;
+            padding: 0;
+            margin: 1.6rem 0;
             @include pc {
-              padding-left: 3.0rem;
+              padding-left: 2.0rem;
+            }
+            &.plain-list {
+              list-style: decimal;
+              padding-left: 2.4rem;
+              & > li {
+                display: list-item;
+                padding: 0;
+                &::before {
+                  display: none;
+                }
+                & + li {
+                  margin-top: 0.4rem;
+                }
+              }
             }
             & > li {
               position: relative;
@@ -114,15 +157,63 @@
               }
             }
           }
-          .cta-lead {
+          ul {
+            position: relative;
+            padding: 0 0 0 2.0rem;
+            margin: 1.6rem 0;
+            list-style: decimal;
+            @include sp {
+              padding: 0;
+            }
+            & > li {
+              display: list-item;
+              padding: 0;
+              @include sp {
+                list-style-position: inside;
+              }
+              &:not(:last-child) {
+                margin-bottom: 1.2rem;
+              }
+              &::before {
+                display: none;
+              }
+            }
+          }
+          .inner {
+            position: relative;
+            @include pc {
+              padding-left: 2.0rem;
+            }
+          }
+          .sign {
+            position: relative;
+            font-weight: 400;
+            margin-top: 3.0rem;
+          }
+          .group {
             position: relative;
             display: block;
-            font-size: 1.8rem;
-            font-weight: 500;
-            line-height: 2.6rem;
-            color: $color-base;
-            text-align: left;
-            margin: 3.0rem 0 1.6rem;
+            margin-top: 3.0rem;
+            .group-lead {
+              position: relative;
+              display: block;
+              font-size: 1.8rem;
+              font-weight: 500;
+              line-height: 2.6rem;
+              color: $color-base;
+              text-align: left;
+              margin: 0 0 1.6rem;
+            }
+            .group-desc {
+              position: relative;
+              margin-bottom: 1.6rem;
+            }
+            .group-content {
+              position: relative;
+              @include pc {
+                padding-left: 2.0rem;
+              }
+            }
           }
           .cta-box {
             position: relative;
@@ -130,7 +221,6 @@
             background: rgba(#FDF7CC, 0.3);
             width: 100%;
             @include pc {
-              margin-left: 3.0rem;
               width: fit-content;
               max-width: 100%;
             }
@@ -151,6 +241,85 @@
             dd {
               font-weight: 400;
             }
+          }
+          .purpose-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.0rem 0;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+            border: 1px solid $color-base;
+            thead {
+              th, td {
+                position: relative;
+                padding: 1.2rem 1.6rem;
+                background: $color-base;
+                font-weight: 600;
+                color: $color-white;
+                text-align: left;
+                vertical-align: middle;
+                @include sp {
+                  padding: 1.2rem 1.2rem;
+                }
+                &:not(:last-child) {
+                  border-right: 1px solid $color-white;
+                }
+              }
+            }
+            tbody {
+              position: relative;
+              th, td {
+                position: relative;
+                border: 1px solid $color-base;
+                padding: 1.8rem 1.6rem;
+                text-align: left;
+                vertical-align: middle;
+                @include sp {
+                  padding: 1.6rem 1.2rem;
+                }
+              }
+              th {
+                font-weight: 600;
+                span {
+                  font-weight: 400;
+                }
+              }
+            }
+            .subject {
+              width: 21.0rem;
+              @include sp {
+                width: 12.0rem;
+              }
+            }
+            ul {
+              position: relative;
+              display: block;
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              & > li {
+                position: relative;
+                display: block;
+                padding-left: 1.4rem;
+                margin: 0;
+                &::before {
+                  content: "・";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  display: block;
+                  background: none;
+                }
+              }
+            }
+          }
+          .mt {
+            margin-top: 2.4rem;
+          }
+          .mb {
+            margin-bottom: 2.4rem;
           }
         }
       }

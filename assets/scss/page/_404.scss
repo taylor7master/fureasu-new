@@ -1,0 +1,100 @@
+.page-404 {
+  position: relative;
+  display: block;
+  padding: 10.0rem 0 12.0rem;
+  z-index: 0;
+  @include sp {
+    padding: 8.0rem 0 10.0rem;
+  }
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -52%);
+    font-size: 24.0rem;
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: 0;
+    color: rgba($color-yellow, 0.12);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+    @include sp {
+      font-size: 14.0rem;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  .page-404-inner {
+    position: relative;
+    margin: 0 auto;
+  }
+  .page-404-title {
+    position: relative;
+    padding-bottom: 2.0rem;
+    margin-bottom: 5.0rem;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 6.0rem);
+      display: block;
+      width: 12.0rem;
+      height: 1px;
+      background: $color-base;
+      z-index: 0;
+      @include sp {
+        left: calc(50% - 5.0rem);
+        width: 10.0rem;
+      }
+    }
+  
+    .sub {
+      position: relative;
+      display: block;
+      font-size: 2.1rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      color: $color-base;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+  
+    .title {
+      position: relative;
+      display: block;
+      font-size: 4.2rem;
+      font-weight: 600;
+      line-height: 5.6rem;
+      color: $color-base;
+      text-align: center;
+      @include sp {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+    }
+  }
+  .page-404-content {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.0;
+    color: $color-primary;
+    text-align: center;
+    margin: 0;
+  }
+  .page-404-action {
+    position: relative;
+    margin-top: 8.0rem;
+    @include sp {
+      margin-top: 6.0rem;
+    }
+    .btn {
+      width: 24.0rem;
+      margin: 0 auto;
+    }
+  }
+}

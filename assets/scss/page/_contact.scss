@@ -1,0 +1,246 @@
+.page-contact {
+  position: relative;
+  padding: 8.0rem 0 9.0rem;
+  @include sp {
+    padding: 6.0rem 0 7.0rem;
+  }
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 100%;
+      padding: 0 7.5rem;
+    }
+  }
+  .section-title {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 8.0rem;
+    @include sp {
+      margin-bottom: 5.0rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    width: 100%;
+    max-width: 116.0rem;
+    margin: 0 auto;
+  }
+  .contact-group {
+    position: relative;
+    & + .contact-group {
+      margin-top: 8.0rem;
+      @include sp {
+        margin-top: 6.0rem;
+      }
+    }
+    .scroll-anchor {
+      position: absolute;
+      top: -5.0rem;
+      left: 0;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .group-lead {
+      position: relative;
+      display: block;
+      font-size: 3.0rem;
+      font-weight: 600;
+      line-height: 3.6rem;
+      color: $color-base;
+      text-align: left;
+      margin-bottom: 3.0rem;
+      @include sp {
+        font-size: 2.2rem;
+        line-height: 3.0rem;
+        margin-bottom: 3.0rem;
+      }
+    }
+    .group-body {
+      position: relative;
+      .card-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4.0rem;
+        @include sp {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 4.0rem;
+        }
+        & > li {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0.8rem;
+            left: 0.8rem;
+            right: -0.8rem;
+            bottom: -0.8rem;
+            display: block;
+            background: linear-gradient(90deg, rgba($color-yellow, 0.3) 0%, rgba($color-base, 0.3) 100%);
+            filter: blur(0.4rem);
+            pointer-events: none;
+            z-index: 0;
+          }
+        }
+      }
+      .inquiry-card {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 2.8rem 2.4rem 3.0rem;
+        background: $color-white;
+        border: 1px solid $color-base;
+        z-index: 1;
+        @include sp {
+          padding: 2.4rem 1.6rem 2.6rem;
+        }
+        .card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .card-title {
+          position: relative;
+          display: block;
+          width: 100%;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 2.6rem;
+          color: $color-primary;
+          text-align: center;
+          margin-bottom: 2.0rem;
+        }
+        .card-note {
+          position: relative;
+          display: block;
+          width: 46.0rem;
+          max-width: 100%;
+          font-weight: 400;
+          color: $color-dark;
+          text-align: center;
+          margin: 0 auto 2.0rem;
+        }
+        .card-actions {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1.6rem;
+          width: 100%;
+          & > li {
+            position: relative;
+            flex: 0 0 auto;
+            width: fit-content;
+          }
+          .btn {
+            font-weight: 600;
+            min-width: 22.0rem;
+            margin: 0 auto;
+          }
+        }
+        @include pc {
+          &:has(.card-inner) {
+            .card-title {
+              margin-bottom: 4.0rem;
+            }
+          }
+        }
+        &:has(.card-note) {
+          .card-title {
+            margin-bottom: 1.6rem;
+          }
+        }
+      }
+    }
+    .group-desc {
+      position: relative;
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: $color-primary;
+      text-align: left;
+      margin: 0 0 2.4rem;
+    }
+    &:has(.group-desc) {
+      .group-lead {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+  
+}
+
+.contact-band {
+  position: relative;
+  padding: 9.0rem 0 9.0rem;
+  background-image: url(../image/contact/band-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include sp {
+    padding: 7.0rem 0 7.0rem;
+    background-image: url(../image/contact/band-bg-sp.jpg);
+  }
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 100%;
+      padding: 0 7.5rem;
+    }
+  }
+  .section-content {
+    position: relative;
+    width: 100%;
+    max-width: 116.0rem;
+    margin: 0 auto;
+  }
+  .band-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3.0rem 3.0rem;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    @include sp {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2.4rem;
+    }
+    & > li {
+      position: relative;
+    }
+  }
+  .band-index {
+    position: relative;
+    width: 100%;
+    height: 10.0rem;
+    font-size: 2.0rem;
+    font-weight: 600;
+    @include sp {
+      font-size: 1.8rem;
+      height: 9.0rem;
+    }
+    svg {
+      position: relative;
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      color: $color-base;
+      vertical-align: middle;
+      margin-left: 0.8rem;
+      margin-bottom: 0.3rem;
+      @include sp {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}
