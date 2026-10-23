@@ -79,7 +79,19 @@
                 </a>
             </h1>
             <nav class="header-nav" aria-label="メインメニュー">
-                <ul class="nav-menu">
+                <div class="nav-body">
+                    <div class="nav-a11y">
+                        <p class="a11y-note">本サイトは、視覚的に閲覧が難しい方へ音声読み上げ対応をしております</p>
+                        <div class="a11y-bar">
+                            <button type="button" class="switch-color-btn" aria-pressed="false">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor">
+                                    <path d="M8 0C4 0 0.945455 2.57143 0 5C0.945455 7.42857 4 10 8 10C12 10 15.0545 7.42857 16 5C15.0545 2.57143 12 0 8 0ZM8 8.21429C7.13202 8.21429 6.29959 7.87564 5.68583 7.27284C5.07208 6.67005 4.72727 5.85248 4.72727 5C4.72727 4.14752 5.07208 3.32995 5.68583 2.72716C6.29959 2.12436 7.13202 1.78571 8 1.78571C8.86798 1.78571 9.70041 2.12436 10.3142 2.72716C10.9279 3.32995 11.2727 4.14752 11.2727 5C11.2727 5.85248 10.9279 6.67005 10.3142 7.27284C9.70041 7.87564 8.86798 8.21429 8 8.21429ZM8 3.21429C7.51779 3.21429 7.05533 3.40242 6.71435 3.73731C6.37338 4.0722 6.18182 4.5264 6.18182 5C6.18182 5.4736 6.37338 5.9278 6.71435 6.26269C7.05533 6.59758 7.51779 6.78571 8 6.78571C8.48221 6.78571 8.94467 6.59758 9.28565 6.26269C9.62662 5.9278 9.81818 5.4736 9.81818 5C9.81818 4.5264 9.62662 4.0722 9.28565 3.73731C8.94467 3.40242 8.48221 3.21429 8 3.21429Z"/>
+                                </svg>
+                                <span>モノクロモード<em>OFF</em></span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="nav-menu">
                     <li>
                         <a href="index.html" class="menu-link">TOP</a>
                     </li>
@@ -105,9 +117,10 @@
                         <a href="#contents" class="menu-link">加盟店募集 <svg class="ext" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><path d="M0.94696 8L0 7.0491L5.73868 1.30749H1.34023L1.35058 0H8V6.646H6.68046L6.69081 2.25323L0.94696 8Z"/></svg></a>
                     </li>
                 </ul>
+                </div>
                 <ul class="nav-actions">
                     <li>
-                        <a class="action-btn action-btn--outline" href="javascript:void(0)">
+                        <a class="action-btn action-btn--outline" href="https://recruit.fureasu.jp/" target="_blank" rel="noopener noreferrer">
                             <span>
                                 <em>採用情報</em>
                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor">
@@ -203,13 +216,10 @@
                     <a href="/" class="menu-link">IR情報</a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="/" class="sub-link">株主・投資家の皆様へ</a>
+                            <a href="/" class="sub-link">社長メッセージ</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">IRライブラリ</a>
-                        </li>
-                        <li>
-                            <a href="/" class="sub-link">IRニュース</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">業績ハイライト</a>
@@ -472,13 +482,10 @@
                             </p>
                             <ul class="menu-list">
                                 <li>
-                                    <a href="/" class="menu-link scrollto">株主・投資家の皆様へ</a>
+                                    <a href="/" class="menu-link scrollto">社長メッセージ</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">IRライブラリ</a>
-                                </li>
-                                <li>
-                                    <a href="/" class="menu-link scrollto">IRニュース</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">業績ハイライト</a>
@@ -575,7 +582,7 @@
                     <ul class="group-list">
                         <li>
                             <a href="" class="group-link purple">
-                                <span>株式会社オルテンシ<br class="sp-only">アハーモニー</span>
+                                <span>株式会社オルテンシア<br class="sp-only">ハーモニー</span>
                                 <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
                                     <path d="M0.910476 6L0 5.08952L3.84381 1.2419H0.95619L0.963809 0H5.99619V5.03619H4.74667L4.75429 2.15238L0.910476 6Z"/>
                                 </svg>
@@ -636,6 +643,11 @@
                         <li>
                             <a href="" class="term-link">
                                 <span>個人情報保護方針</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="term-link">
+                                <span>視覚的に閲覧が難しい方へ</span>
                             </a>
                         </li>
                         <li>

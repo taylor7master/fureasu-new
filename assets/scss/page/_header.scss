@@ -32,10 +32,13 @@
       display: block;
       width: fit-content;
       float: left;
+      @include pc {
+        margin-top: 0.8rem;
+      }
       a {
         position: relative;
         display: block;
-        width: 21.0rem;
+        width: 21.4rem;
         max-width: 100%;
         @include sp {
           width: 16.4rem;
@@ -55,9 +58,9 @@
     .header-nav {
       position: relative;
       display: flex;
-      align-items: center;
       justify-content: flex-end;
-      gap: 2.4rem;
+      align-items: center;
+      column-gap: 2.4rem;
       width: fit-content;
       max-width: 100%;
       @include pc {
@@ -65,6 +68,84 @@
       }
       @include sp {
         display: none;
+      }
+
+      .nav-a11y {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.2rem;
+        width: 100%;
+        margin: 0 0 1.0rem;
+        .a11y-note {
+          position: relative;
+          flex: 0 0 auto;
+          width: fit-content;
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.8rem;
+          color: #555555;
+          text-align: right;
+          margin: 0;
+        }
+        .a11y-bar {
+          position: relative;
+          display: flex;
+          align-items: center;
+          flex: 0 0 auto;
+          width: fit-content;
+        }
+        .switch-color-btn {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.4rem;
+          height: 2.4rem;
+          padding: 0 1.0rem;
+          margin: 0;
+          background: $color-white;
+          border: 1px solid #333333;
+          border-radius: 2.4rem;
+          font-family: $font_noto;
+          font-size: 1.1rem;
+          font-weight: 700;
+          line-height: 1;
+          color: #333333;
+          white-space: nowrap;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          svg {
+            position: relative;
+            display: block;
+            width: 1.4rem;
+            height: 1.0rem;
+            flex: 0 0 auto;
+            color: currentColor;
+          }
+          span {
+            position: relative;
+            display: block;
+            color: inherit;
+          }
+          em {
+            font-style: normal;
+            font-weight: 700;
+            margin-left: 0.3rem;
+          }
+          &:hover {
+            color: $color-base;
+            border-color: $color-base;
+          }
+          &.is-active,
+          &[aria-pressed="true"] {
+            background: $color-base;
+            border-color: $color-base;
+            color: $color-white;
+          }
+        }
       }
 
       .nav-menu {
@@ -87,11 +168,11 @@
             &::before {
               content: "";
               position: absolute;
-              top: calc(50% - 0.9rem);
+              top: calc(50% - 0.8rem);
               right: 0;
               width: 1px;
-              height: 1.8rem;
-              background-color: $color-primary;
+              height: 1.6rem;
+              background-color: $color-gray;
               z-index: 0;
             }
           }
@@ -100,8 +181,8 @@
             display: block;
             width: fit-content;
             font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 2.4rem;
+            font-weight: 700;
+            line-height: 2.2rem;
             color: $color-primary;
             padding: 0;
             margin: 0;
@@ -134,6 +215,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        grid-column: 2;
         gap: 1.4rem;
         & > li {
           flex: 0 0 auto;
@@ -146,13 +228,13 @@
           justify-content: center;
           width: 20.0rem;
           max-width: 100%;
-          height: 4.8rem;
+          height: 5.4rem;
           padding: 0;
           background: linear-gradient(90deg, #AF0080 0%, #F5D800 50%, #AF0080 100%);
           background-size: 200% 100%;
           background-position: right center;
           font-size: 1.4rem;
-          font-weight: 500;
+          font-weight: 700;
           line-height: 1.5;
           color: $color-white;
           text-align: center;
@@ -430,9 +512,8 @@
       width: fit-content;
       max-width: 100%;
       height: 3.6rem;
-      padding: 0.8rem 1.54rem;
-      font-family: $font_noto;
-      font-size: 1.67rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.6rem;
       font-weight: 700;
       line-height: 1;
       color: #333333;

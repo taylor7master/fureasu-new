@@ -79,7 +79,19 @@
                 </a>
             </div>
             <nav class="header-nav" aria-label="メインメニュー">
-                <ul class="nav-menu">
+                <div class="nav-body">
+                    <div class="nav-a11y">
+                        <p class="a11y-note">本サイトは、視覚的に閲覧が難しい方へ音声読み上げ対応をしております</p>
+                        <div class="a11y-bar">
+                            <button type="button" class="switch-color-btn" aria-pressed="false">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor">
+                                    <path d="M8 0C4 0 0.945455 2.57143 0 5C0.945455 7.42857 4 10 8 10C12 10 15.0545 7.42857 16 5C15.0545 2.57143 12 0 8 0ZM8 8.21429C7.13202 8.21429 6.29959 7.87564 5.68583 7.27284C5.07208 6.67005 4.72727 5.85248 4.72727 5C4.72727 4.14752 5.07208 3.32995 5.68583 2.72716C6.29959 2.12436 7.13202 1.78571 8 1.78571C8.86798 1.78571 9.70041 2.12436 10.3142 2.72716C10.9279 3.32995 11.2727 4.14752 11.2727 5C11.2727 5.85248 10.9279 6.67005 10.3142 7.27284C9.70041 7.87564 8.86798 8.21429 8 8.21429ZM8 3.21429C7.51779 3.21429 7.05533 3.40242 6.71435 3.73731C6.37338 4.0722 6.18182 4.5264 6.18182 5C6.18182 5.4736 6.37338 5.9278 6.71435 6.26269C7.05533 6.59758 7.51779 6.78571 8 6.78571C8.48221 6.78571 8.94467 6.59758 9.28565 6.26269C9.62662 5.9278 9.81818 5.4736 9.81818 5C9.81818 4.5264 9.62662 4.0722 9.28565 3.73731C8.94467 3.40242 8.48221 3.21429 8 3.21429Z"/>
+                                </svg>
+                                <span>モノクロモード<em>OFF</em></span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="nav-menu">
                     <li>
                         <a href="index.html" class="menu-link">TOP</a>
                     </li>
@@ -105,9 +117,10 @@
                         <a href="#contents" class="menu-link">加盟店募集 <svg class="ext" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><path d="M0.94696 8L0 7.0491L5.73868 1.30749H1.34023L1.35058 0H8V6.646H6.68046L6.69081 2.25323L0.94696 8Z"/></svg></a>
                     </li>
                 </ul>
+                </div>
                 <ul class="nav-actions">
                     <li>
-                        <a class="action-btn action-btn--outline" href="javascript:void(0)">
+                        <a class="action-btn action-btn--outline" href="https://recruit.fureasu.jp/" target="_blank" rel="noopener noreferrer">
                             <span>
                                 <em>採用情報</em>
                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor">
@@ -203,13 +216,10 @@
                     <a href="/" class="menu-link">IR情報</a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="/" class="sub-link">株主・投資家の皆様へ</a>
+                            <a href="/" class="sub-link">社長メッセージ</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">IRライブラリ</a>
-                        </li>
-                        <li>
-                            <a href="/" class="sub-link">IRニュース</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">業績ハイライト</a>
@@ -340,7 +350,7 @@
                             <div class="desc">私たちは、誰もが最後まで自分の人生を精一杯生きる事を支援していきたいと考えます。<br><br>療養をされている方が、今日も自分らしい良い1日を過ごせたと思う事ができたら、 それは価値のある時間と言えるのではないでしょうか。<br><br>一人ひとりの方が、それぞれの人生の時間をその人らしく過ごす事。<br><br>『時間の価値の最大化』をフレアスグループは目指します。<br><br>日本中の至る所で、『今日も自分らしい時間が過ごせた』と笑顔が広がることを目指して、私たちは活動を続けます。</div>
                         </div>
                         <div class="section-profile">
-                            <figure class="image">
+                            <figure class="image scrt-cover">
                                 <img src="assets/image/president.png" alt="代表取締役社長 CEO 澤登 拓">
                             </figure>
                             <p class="role">株式会社フレアス　代表取締役社長 CEO<br>鍼灸マッサージ師<br>一般社団法人 山梨県はり師きゅう師マッサージ師会 会長</p>
@@ -412,7 +422,7 @@
                                     <div class="video-card">
                                         <h3 class="card-label">マッサージ編❶</h3>
                                         <div class="card-video">
-                                            <img src="assets/image/company/video-01.png" alt="マッサージ編❶" loading="lazy">
+                                            <iframe src="https://www.youtube-nocookie.com/embed/r1W255sevas?autoplay=1&amp;rel=0" title="代表メッセージ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </li>
@@ -420,15 +430,15 @@
                                     <div class="video-card">
                                         <h3 class="card-label">マッサージ編❷</h3>
                                         <div class="card-video">
-                                            <img src="assets/image/company/video-01.png" alt="マッサージ編❷" loading="lazy">
+                                            <iframe src="https://www.youtube-nocookie.com/embed/rs0wrgXjbPs?autoplay=1&amp;rel=0" title="代表メッセージ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="video-card">
                                         <h3 class="card-label">カンタキ編</h3>
-                                        <div class="card-video">
-                                            <img src="assets/image/company/video-01.png" alt="カンタキ編" loading="lazy">
+                                        <div class="card-video scrt-cover">
+                                            <img src="assets/image/company/video-03.png" alt="カンタキ編" loading="lazy">
                                         </div>
                                     </div>
                                 </li>
@@ -497,7 +507,7 @@
                                             </li>
                                         </ol>
                                     </div>
-                                    <figure class="history-image">
+                                    <figure class="history-image scrt-cover">
                                         <img src="assets/image/company/history-01.png" alt="2011年" loading="lazy">
                                     </figure>
                                 </li>
@@ -556,7 +566,7 @@
                                             </li>
                                         </ol>
                                     </div>
-                                    <figure class="history-image">
+                                    <figure class="history-image scrt-cover">
                                         <img src="assets/image/company/history-02.png" alt="2021年" loading="lazy">
                                     </figure>
                                 </li>
@@ -656,7 +666,7 @@
                                         <th>関連会社</th>
                                         <td>
                                             <div class="related">
-                                                <p class="list">株式会社オルテンシアハーモニー<br>フレアスカインドケア株式会社<br>フレアスミライワークス株式会社</p>
+                                                <p class="list">株式会社オルテンシア<br class="sp-only">ハーモニー<br>フレアスカインドケア株式会社<br>フレアスミライワークス株式会社</p>
                                                 <img class="image" src="assets/image/company/related.png" alt="関連会社" loading="lazy">
                                             </div>
                                         </td>
@@ -695,7 +705,7 @@
                                         </div>
                                         <div class="card-info">
                                             <h3 class="title"><a href="https://maps.app.goo.gl/8RmdsyPQXc78TNbb8" target="_blank" rel="noopener noreferrer">初台オフィス<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M1.65718 14L0 12.3359L10.0427 2.28811H2.34541L2.36352 0H14V11.6305H11.6908L11.7089 3.94315L1.65718 14Z"/></svg></a></h3>
-                                            <p class="address">〒151-0061<br>東京都渋谷区初台二丁目5番8号<br>(西新宿豊国2F)</p>
+                                            <p class="address">〒151-0061<br>東京都渋谷区初台二丁目5番8号<br>(西新宿豊国ビル2F)</p>
                                             <p class="tel">TEL.03-6632-9210<br>FAX.03-6276-5576</p>
                                         </div>
                                     </div>
@@ -819,13 +829,10 @@
                             </p>
                             <ul class="menu-list">
                                 <li>
-                                    <a href="/" class="menu-link scrollto">株主・投資家の皆様へ</a>
+                                    <a href="/" class="menu-link scrollto">社長メッセージ</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">IRライブラリ</a>
-                                </li>
-                                <li>
-                                    <a href="/" class="menu-link scrollto">IRニュース</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">業績ハイライト</a>
@@ -922,7 +929,7 @@
                     <ul class="group-list">
                         <li>
                             <a href="" class="group-link purple">
-                                <span>株式会社オルテンシ<br class="sp-only">アハーモニー</span>
+                                <span>株式会社オルテンシア<br class="sp-only">ハーモニー</span>
                                 <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
                                     <path d="M0.910476 6L0 5.08952L3.84381 1.2419H0.95619L0.963809 0H5.99619V5.03619H4.74667L4.75429 2.15238L0.910476 6Z"/>
                                 </svg>
@@ -983,6 +990,11 @@
                         <li>
                             <a href="" class="term-link">
                                 <span>個人情報保護方針</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="term-link">
+                                <span>視覚的に閲覧が難しい方へ</span>
                             </a>
                         </li>
                         <li>

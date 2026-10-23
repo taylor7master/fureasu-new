@@ -79,7 +79,19 @@
                 </a>
             </div>
             <nav class="header-nav" aria-label="メインメニュー">
-                <ul class="nav-menu">
+                <div class="nav-body">
+                    <div class="nav-a11y">
+                        <p class="a11y-note">本サイトは、視覚的に閲覧が難しい方へ音声読み上げ対応をしております</p>
+                        <div class="a11y-bar">
+                            <button type="button" class="switch-color-btn" aria-pressed="false">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor">
+                                    <path d="M8 0C4 0 0.945455 2.57143 0 5C0.945455 7.42857 4 10 8 10C12 10 15.0545 7.42857 16 5C15.0545 2.57143 12 0 8 0ZM8 8.21429C7.13202 8.21429 6.29959 7.87564 5.68583 7.27284C5.07208 6.67005 4.72727 5.85248 4.72727 5C4.72727 4.14752 5.07208 3.32995 5.68583 2.72716C6.29959 2.12436 7.13202 1.78571 8 1.78571C8.86798 1.78571 9.70041 2.12436 10.3142 2.72716C10.9279 3.32995 11.2727 4.14752 11.2727 5C11.2727 5.85248 10.9279 6.67005 10.3142 7.27284C9.70041 7.87564 8.86798 8.21429 8 8.21429ZM8 3.21429C7.51779 3.21429 7.05533 3.40242 6.71435 3.73731C6.37338 4.0722 6.18182 4.5264 6.18182 5C6.18182 5.4736 6.37338 5.9278 6.71435 6.26269C7.05533 6.59758 7.51779 6.78571 8 6.78571C8.48221 6.78571 8.94467 6.59758 9.28565 6.26269C9.62662 5.9278 9.81818 5.4736 9.81818 5C9.81818 4.5264 9.62662 4.0722 9.28565 3.73731C8.94467 3.40242 8.48221 3.21429 8 3.21429Z"/>
+                                </svg>
+                                <span>モノクロモード<em>OFF</em></span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="nav-menu">
                     <li>
                         <a href="index.html" class="menu-link">TOP</a>
                     </li>
@@ -105,9 +117,10 @@
                         <a href="#contents" class="menu-link">加盟店募集 <svg class="ext" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><path d="M0.94696 8L0 7.0491L5.73868 1.30749H1.34023L1.35058 0H8V6.646H6.68046L6.69081 2.25323L0.94696 8Z"/></svg></a>
                     </li>
                 </ul>
+                </div>
                 <ul class="nav-actions">
                     <li>
-                        <a class="action-btn action-btn--outline" href="javascript:void(0)">
+                        <a class="action-btn action-btn--outline" href="https://recruit.fureasu.jp/" target="_blank" rel="noopener noreferrer">
                             <span>
                                 <em>採用情報</em>
                                 <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor">
@@ -203,13 +216,10 @@
                     <a href="/" class="menu-link">IR情報</a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="/" class="sub-link">株主・投資家の皆様へ</a>
+                            <a href="/" class="sub-link">社長メッセージ</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">IRライブラリ</a>
-                        </li>
-                        <li>
-                            <a href="/" class="sub-link">IRニュース</a>
                         </li>
                         <li>
                             <a href="/" class="sub-link">業績ハイライト</a>
@@ -333,7 +343,7 @@
                                     <span class="line"></span>
                                 </div>
                                 <h3 class="section-lead"><small>フレアスポリシー</small><br>「私たちが大切にしていること」</h3>
-                                <figure class="section-photo">
+                                <figure class="section-photo scrt-cover">
                                     <img src="assets/image/compliance/hero.png" alt="ご利用者様とスタッフ" loading="lazy">
                                 </figure>
                                 <p class="section-desc">株式会社フレアスは法令遵守を第一に考え、様々な取り組みをしています。</p>
@@ -344,7 +354,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon01.png" alt="" loading="lazy">
-                                                <span>訪問実績の記録と確認</span>
+                                                <span>あん摩マッサージ指圧師の免許確認の徹底</span>
                                             </h3>
                                             <p class="desc">マッサージサービスを提供するスタッフに関しては、入社時にあん摩マッサージ指圧師の免許を確認し、登録・管理しています。</p>
                                         </div>
@@ -353,7 +363,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon02.png" alt="" loading="lazy">
-                                                <span>訪問確認施術録と療養費支給申請書の照合</span>
+                                                <span>保健所への施術者登録</span>
                                             </h3>
                                             <p class="desc">管轄保健所に全員の施術者登録を行い、入社・退職・異動等人員の変更があれば随時変更届を提出しています。</p>
                                         </div>
@@ -362,7 +372,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon03.png" alt="" loading="lazy">
-                                                <span>適正な往療距離と回数</span>
+                                                <span>訪問実績の記録と確認</span>
                                             </h3>
                                             <p class="desc">ご利用者様のお宅に訪問確認施術録を置き、施術後に施術内容を記載します。訪問確認施術録はご利用者様宅に保管していただきます。</p>
                                         </div>
@@ -371,7 +381,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon04.png" alt="" loading="lazy">
-                                                <span>同意確認の徹底</span>
+                                                <span>訪問確認施術録と療養費支給申請書の照合</span>
                                             </h3>
                                             <p class="desc">療養費支給申請書は専用システムで作成し、ご利用者様のお宅に保管してある訪問確認施術録と照合した上で、押印前にご利用者様に確認していただいています。</p>
                                         </div>
@@ -380,7 +390,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon05.png" alt="" loading="lazy">
-                                                <span>あん摩マッサージ指圧師の免許確認の徹底</span>
+                                                <span>適正な往療距離と回数</span>
                                             </h3>
                                             <p class="desc">1. 地図ソフトを使用し、訪問順位による比較計算（施術場所からの距離が、その前の施術場所と当社事業所のいずれが近いかを判別）をし、より近い距離の場所において施術を行っています。<br>2. ご利用者様の身体状況を把握し、かかりつけの医師（主治医）に記入いただいた同意書の内容に基づき施術目標を立てた上で、施術の頻度をご提案しています。</p>
                                         </div>
@@ -389,7 +399,7 @@
                                         <div class="policy-card">
                                             <h3 class="title">
                                                 <img src="assets/image/compliance/policy-icon06.png" alt="" loading="lazy">
-                                                <span>保健所への施術者登録</span>
+                                                <span>同意確認の徹底</span>
                                             </h3>
                                             <p class="desc">ご利用者様のかかりつけの医師（主治医）への同意確認は書面で行っています。<br>同意期限を超えて施術を継続する際には、同意をいただいた医師に「施術報告書」を提出し、施術内容を確認していただいた上で、施術の継続に同意をいただくようにしています。</p>
                                         </div>
@@ -523,7 +533,7 @@
                                                     <ul class="cards">
                                                         <li>
                                                             <div class="card">
-                                                                <figure class="photo">
+                                                                <figure class="photo scrt-cover">
                                                                     <img src="assets/image/compliance/quality03.png" alt="ガイドライン" loading="lazy">
                                                                 </figure>
                                                                 <div class="content">
@@ -534,7 +544,7 @@
                                                         </li>
                                                         <li>
                                                             <div class="card">
-                                                                <figure class="photo">
+                                                                <figure class="photo scrt-cover">
                                                                     <img src="assets/image/compliance/quality04.png" alt="ガイドライン" loading="lazy">
                                                                 </figure>
                                                                 <div class="content">
@@ -554,7 +564,7 @@
                                                     <ul class="cards">
                                                         <li>
                                                             <div class="card">
-                                                                <figure class="photo">
+                                                                <figure class="photo scrt-cover">
                                                                     <img src="assets/image/compliance/quality05.png" alt="ガイドライン" loading="lazy">
                                                                 </figure>
                                                                 <div class="content">
@@ -565,7 +575,7 @@
                                                         </li>
                                                         <li>
                                                             <div class="card">
-                                                                <figure class="photo">
+                                                                <figure class="photo scrt-cover">
                                                                     <img src="assets/image/compliance/quality06.png" alt="ガイドライン" loading="lazy">
                                                                 </figure>
                                                                 <div class="content">
@@ -586,7 +596,7 @@
                                     <h3 class="lead">︎ITを活用したEラーニング環境</h3>
                                     <p class="sub">フレアスではスタッフにタブレット端末を貸与し、研修動画や資料を自主的に学習できる環境を整えています。<br>品質管理部門のメンバーが、現場で実践されている知恵を集めたシナリオを作成し、オリジナルの動画コンテンツを用意しています。<br>基本的なマッサージ手技のほか、介助動作、機能訓練等のラインナップがあります。</p>
                                 </div>
-                                <figure class="elearn-photo">
+                                <figure class="elearn-photo scrt-cover">
                                     <img src="assets/image/compliance/elearn-trim.png" alt="約1,150本の動画も視聴可能" loading="lazy">
                                 </figure>
                             </div>
@@ -595,7 +605,7 @@
                                     <h3 class="lead">研究事業</h3>
                                     <p class="sub">フレアスでは、高齢者・障がい者を対象にした訪問マッサージ事業をメインに、訪問看護・訪問介護を全国規模で展開し、総合的な在宅サービスを提供しています。<br>年間の利用者はおよそ1.5万人へ訪問鍼灸マッサージを実施しています。<br>日本には、筋・骨格系に中等度以上のある痛みのある患者数が2000万人以上と推察されており、慢性疼痛によるADLとQOLを大きく低下させていることは明らかになっています。<br>さらに、痛みを持つ患者を支える家族（介助者）の苦悩や負担も非常に大きく、痛みの克服は重要な課題となっています。<br><br>そこで、疼痛コントロールが期待できる鍼灸マッサージ施術を行うことで、運動できる身体を作り、動けることによる自己達成感を生み、ロコモティブシンドローム・フレイルの悪循環を良循環に変えることへ繋げるため、当社で提供している鍼灸マッサージの医療サービスにおいて痛みと運動機能の評価について、データベース構築及び効果検証を産総研及び東京大学の医学的監修を基に共同で実証実験を行い、医療サービスの標準化・体系化をするため、研究や開発を行い多くの高齢者及び障害者のADL・QOLの向上へ繋げるために効果検証に向けたデータベースの構築に着手いたします。</p>
                                 </div>
-                                <picture class="lab-photo">
+                                <picture class="lab-photo scrt-cover">
                                     <source srcset="./assets/image/compliance/lab.png" media="(min-width: 769px)">
                                     <source srcset="./assets/image/compliance/lab-sp.png" media="(max-width: 768px)">
                                     <img src="assets/image/compliance/lab.png" alt="研究事業" loading="lazy">
@@ -739,13 +749,10 @@
                             </p>
                             <ul class="menu-list">
                                 <li>
-                                    <a href="/" class="menu-link scrollto">株主・投資家の皆様へ</a>
+                                    <a href="/" class="menu-link scrollto">社長メッセージ</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">IRライブラリ</a>
-                                </li>
-                                <li>
-                                    <a href="/" class="menu-link scrollto">IRニュース</a>
                                 </li>
                                 <li>
                                     <a href="/" class="menu-link scrollto">業績ハイライト</a>
@@ -842,7 +849,7 @@
                     <ul class="group-list">
                         <li>
                             <a href="" class="group-link purple">
-                                <span>株式会社オルテンシ<br class="sp-only">アハーモニー</span>
+                                <span>株式会社オルテンシア<br class="sp-only">ハーモニー</span>
                                 <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
                                     <path d="M0.910476 6L0 5.08952L3.84381 1.2419H0.95619L0.963809 0H5.99619V5.03619H4.74667L4.75429 2.15238L0.910476 6Z"/>
                                 </svg>
@@ -903,6 +910,11 @@
                         <li>
                             <a href="" class="term-link">
                                 <span>個人情報保護方針</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="term-link">
+                                <span>視覚的に閲覧が難しい方へ</span>
                             </a>
                         </li>
                         <li>
