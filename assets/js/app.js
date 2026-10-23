@@ -256,6 +256,9 @@
     });
 
     window.lenis = lenis;
+    if (typeof AOS !== 'undefined') {
+      AOS.refresh();
+    }
 
     function raf(time) {
       lenis.raf(time);
@@ -537,5 +540,29 @@
   });
 
   syncSidebarIndex();
+
+  var aosDuration = 1200;
+  var aosOffset = 100;
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    aosDuration = 1000;
+    aosOffset = 30;
+  }
+
+  function aosInit() {
+    if (typeof AOS === 'undefined') {
+      return;
+    }
+    AOS.init({
+      duration: aosDuration,
+      offset: aosOffset,
+      once: true,
+      anchorPlacement: 'top-bottom',
+      disable: reduceMotion
+    });
+  }
+
+  $(window).on('load', function() {
+    aosInit();
+  });
 
 })(jQuery);
