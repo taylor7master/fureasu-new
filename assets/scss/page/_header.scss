@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background: $color-white;
-  padding: 2.0rem 3.2rem 2.0rem;
+  padding: 2.2rem 4.0rem 2.2rem 4.0rem;
   transition: all 0.2s ease-in-out;
   z-index: 991;
   @include sp {
@@ -38,7 +38,7 @@
       a {
         position: relative;
         display: block;
-        width: 21.4rem;
+        width: 21.456rem;
         max-width: 100%;
         @include sp {
           width: 16.4rem;

@@ -687,6 +687,19 @@
       border: none;
     }
   }
+  .mail-note {
+    position: relative;
+    padding: 0 15px;
+    color: #676A6C;
+    margin-top: 2.4rem;
+    a {
+      color: #337AB7;
+      text-decoration: none;
+      &:hover {
+        color: #23527C;
+      }
+    }
+  }
 }
 
 .page-ir-epn,
