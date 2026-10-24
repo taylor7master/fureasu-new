@@ -42,6 +42,7 @@
             border-radius: 0;
             max-width: 100%;
             text-decoration: none;
+            transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
             margin: 0;
             @include sp {
               font-size: 1.4rem;
@@ -57,27 +58,28 @@
               transition: color 0.4s ease-in-out;
               z-index: 3;
             }
-            &::before {
-              content: "";
-              position: absolute;
-              display: block;
-              top: 0;
-              left: 0;
-              display: block;
-              background: $color-base;
-              width: 100%;
-              height: 100%;
-              transition: transform 0.4s ease-in-out;
-              transform-origin: right top;
-              transform: scale(0, 1);
-              z-index: 1;
-            }
+            // &::before {
+            //   content: "";
+            //   position: absolute;
+            //   display: block;
+            //   top: 0;
+            //   left: 0;
+            //   display: block;
+            //   background: $color-base;
+            //   width: 100%;
+            //   height: 100%;
+            //   transition: transform 0.4s ease-in-out;
+            //   transform-origin: right top;
+            //   transform: scale(0, 1);
+            //   z-index: 1;
+            // }
             &:hover {
               color: $color-white;
-              &::before {
-                transform-origin: left top;
-                transform: scale(1, 1);
-              }
+              background: $color-base;
+              // &::before {
+              //   transform-origin: left top;
+              //   transform: scale(1, 1);
+              // }
             }
           }
           .date {
@@ -418,7 +420,7 @@
         padding: 1.8rem 2.4rem;
         border: 1px solid $color-base;
         background: transparent;
-        transition: all 0.3s ease;
+        transition: background 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
         margin: 0;
         @include sp {
           padding: 1.6rem 1.6rem;
@@ -446,33 +448,35 @@
           margin: 0;
           z-index: 3;
         }
-        &::before {
-          content: "";
-          position: absolute;
-          display: block;
-          top: 0;
-          left: 0;
-          display: block;
-          background: $color-base;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.4s ease-in-out;
-          transform-origin: right top;
-          transform: scale(0, 1);
-          z-index: 1;
-        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   display: block;
+        //   top: 0;
+        //   left: 0;
+        //   display: block;
+        //   background: $color-base;
+        //   width: 100%;
+        //   height: 100%;
+        //   transition: transform 0.4s ease-in-out;
+        //   transform-origin: right top;
+        //   transform: scale(0, 1);
+        //   z-index: 1;
+        // }
         &:hover {
           color: $color-white;
+          background: $color-base;
+          transform: translateY(-0.4rem);
           .label {
             color: $color-yellow;
           }
           .title {
             color: $color-white;
           }
-          &::before {
-            transform-origin: left top;
-            transform: scale(1, 1);
-          }
+          // &::before {
+          //   transform-origin: left top;
+          //   transform: scale(1, 1);
+          // }
         }
       }
       .blog-nav-prev {
@@ -494,13 +498,13 @@
             }
           }
         }
-        &::before {
-          transform-origin: left top;
-        }
+        // &::before {
+        //   transform-origin: left top;
+        // }
         &:hover {
-          &::before {
-            transform-origin: right top;
-          }
+          // &::before {
+          //   transform-origin: right top;
+          // }
           @include pc {
             .title {
               &::before {
@@ -530,13 +534,13 @@
             }
           }
         }
-        &::before {
-          transform-origin: right top;
-        }
+        // &::before {
+        //   transform-origin: right top;
+        // }
         &:hover {
-          &::before {
-            transform-origin: left top;
-          }
+          // &::before {
+          //   transform-origin: left top;
+          // }
           @include pc {
             .title {
               &::after {

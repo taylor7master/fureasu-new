@@ -286,3 +286,9 @@ html.is-mono #mobile-nav,
 html.is-mono .mobile-nav-overly {
   filter: grayscale(1);
 }
+
+@include sp {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}

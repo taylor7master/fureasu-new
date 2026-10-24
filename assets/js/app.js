@@ -541,19 +541,20 @@
 
   syncSidebarIndex();
 
-  var aosDuration = 1200;
-  var aosOffset = 100;
+  var aosOffset = 120;
   if (window.matchMedia('(max-width: 768px)').matches) {
-    aosDuration = 1000;
-    aosOffset = 30;
+    aosOffset = 40;
   }
 
+  var aosStarted = false;
+
   function aosInit() {
-    if (typeof AOS === 'undefined') {
+    if (aosStarted || typeof AOS === 'undefined') {
       return;
     }
+    aosStarted = true;
     AOS.init({
-      duration: aosDuration,
+      duration: 1000,
       offset: aosOffset,
       once: true,
       anchorPlacement: 'top-bottom',
@@ -561,8 +562,7 @@
     });
   }
 
-  $(window).on('load', function() {
-    aosInit();
-  });
+  $(aosInit);
+  $(window).on('load', aosInit);
 
 })(jQuery);

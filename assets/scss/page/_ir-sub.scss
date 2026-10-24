@@ -431,7 +431,7 @@
       color: $color-primary;
       text-align: center;
       cursor: pointer;
-      transition: color 0.4s ease-in-out;
+      transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
       overflow: hidden;
       z-index: 0;
       @include sp {
@@ -449,23 +449,24 @@
         color: inherit;
         z-index: 3;
       }
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        inset: 0;
-        background: $color-gray-btn;
-        transition: transform 0.4s ease-in-out;
-        transform: scale(0, 1);
-        transform-origin: right top;
-        z-index: 0;
-      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   inset: 0;
+      //   background: $color-gray-btn;
+      //   transition: transform 0.4s ease-in-out;
+      //   transform: scale(0, 1);
+      //   transform-origin: right top;
+      //   z-index: 0;
+      // }
       &:hover {
         color: $color-primary;
-        &::before {
-          transform-origin: left top;
-          transform: scale(1, 1);
-        }
+        background: $color-gray-btn;
+        // &::before {
+        //   transform-origin: left top;
+        //   transform: scale(1, 1);
+        // }
       }
       &.is-active {
         background: #F3F3F3;
@@ -852,6 +853,7 @@
       border: none;
       outline: none;
       overflow: hidden;
+      transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
       z-index: 0;
       @include sp {
         width: 100%;
@@ -869,23 +871,24 @@
         margin: 0;
         z-index: 3;
       }
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        inset: 0;
-        background: $color-gray-btn;
-        transition: transform 0.4s ease-in-out;
-        transform: scale(0, 1);
-        transform-origin: right top;
-        z-index: 0;
-      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   inset: 0;
+      //   background: $color-gray-btn;
+      //   transition: transform 0.4s ease-in-out;
+      //   transform: scale(0, 1);
+      //   transform-origin: right top;
+      //   z-index: 0;
+      // }
       &:hover {
         color: $color-primary;
-        &::before {
-          transform-origin: left top;
-          transform: scale(1, 1);
-        }
+        background: $color-gray-btn;
+        // &::before {
+        //   transform-origin: left top;
+        //   transform: scale(1, 1);
+        // }
       }
       &.is-active {
         background: $color-gray-btn;

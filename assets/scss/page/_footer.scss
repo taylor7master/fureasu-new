@@ -141,9 +141,9 @@
         inset: 2px;
         display: block;
         background: $color-white;
-        transition: transform 0.4s ease-in-out;
-        transform-origin: left top;
-        transform: scale(1, 1);
+        transition: opacity 0.4s ease-in-out;
+        // transform-origin: left top;
+        // transform: scale(1, 1);
         z-index: 1;
       }
       .lead {
@@ -171,8 +171,9 @@
       &:hover {
         color: $color-white;
         &::before {
-          transform-origin: right top;
-          transform: scale(0, 1);
+          opacity: 0;
+          // transform-origin: right top;
+          // transform: scale(0, 1);
         }
       }
     }
@@ -363,6 +364,7 @@
         border: none;
         outline: none;
         overflow: hidden;
+        transition: background 0.4s ease-in-out;
         margin: 0;
         z-index: 0;
         @include pc {
@@ -387,7 +389,7 @@
             width: 0.7rem;
           }
           path {
-            transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+            transition: all 0.4s ease-in-out;
           }
         }
         span {
@@ -401,21 +403,21 @@
           transition: color 0.4s ease-in-out;
           z-index: 3;
         }
-        &::before {
-          content: "";
-          position: absolute;
-          display: block;
-          top: 0;
-          left: 0;
-          display: block;
-          background: $color-base;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.4s ease-in-out;
-          transform-origin: right top;
-          transform: scale(0, 1);
-          z-index: 1;
-        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   display: block;
+        //   top: 0;
+        //   left: 0;
+        //   display: block;
+        //   background: $color-base;
+        //   width: 100%;
+        //   height: 100%;
+        //   transition: transform 0.4s ease-in-out;
+        //   transform-origin: right top;
+        //   transform: scale(0, 1);
+        //   z-index: 1;
+        // }
         &::after {
           content: "";
           position: absolute;
@@ -428,10 +430,11 @@
         }
         &:hover {
           color: $color-white;
-          &::before {
-            transform-origin: left top;
-            transform: scale(1, 1);
-          }
+          background: $color-base;
+          // &::before {
+          //   transform-origin: left top;
+          //   transform: scale(1, 1);
+          // }
           svg {
             color: $color-white;
           }
@@ -440,15 +443,16 @@
           &::after {
             border-color: $color-yellow;
           }
-          &::before {
-            background: $color-yellow;
-          }
+          // &::before {
+          //   background: $color-yellow;
+          // }
           &:hover {
             color: $color-primary;
-            &::before {
-              transform-origin: left top;
-              transform: scale(1, 1);
-            }
+            background: $color-yellow;
+            // &::before {
+            //   transform-origin: left top;
+            //   transform: scale(1, 1);
+            // }
             svg {
               color: $color-primary;
             }
@@ -458,7 +462,10 @@
           &::after {
             border-color: $color-purple;
           }
-          &::before {
+          // &::before {
+          //   background: $color-purple;
+          // }
+          &:hover {
             background: $color-purple;
           }
         }

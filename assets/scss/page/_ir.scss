@@ -275,7 +275,7 @@
         height: 100%;
         padding: 2.4rem 1.6rem 2.4rem 3.0rem;
         background: $color-white;
-        transition: transform 0.4s ease;
+        transition: background 0.4s ease-in-out, transform 0.4s ease;
         z-index: 0;
         @include sp {
           padding: 2.4rem 1.0rem 2.4rem 1.8rem;
@@ -324,22 +324,23 @@
           }
           z-index: 3;
         }
-        &::before {
-          content: "";
-          position: absolute;
-          display: block;
-          inset: 0;
-          background: $color-yellow;
-          transition: transform 0.4s ease-in-out;
-          transform: scale(0, 1);
-          transform-origin: right top;
-        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   display: block;
+        //   inset: 0;
+        //   background: $color-yellow;
+        //   transition: transform 0.4s ease-in-out;
+        //   transform: scale(0, 1);
+        //   transform-origin: right top;
+        // }
         &:hover {
+          background: $color-yellow;
           transform: translateY(-0.4rem);
-          &::before {
-            transform-origin: left top;
-            transform: scale(1, 1);
-          }
+          // &::before {
+          //   transform-origin: left top;
+          //   transform: scale(1, 1);
+          // }
         }
       }
     }
