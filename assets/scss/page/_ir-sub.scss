@@ -701,6 +701,32 @@
       }
     }
   }
+
+  .mail-notes {
+    position: relative;
+    line-height: 2.8rem;
+    h4 {
+      position: relative;
+      font-size: 2.0rem;
+      font-weight: 600;
+      line-height: 2.8rem;
+      text-indent: -0.8rem;
+      margin: 0 0 1.6rem;
+    }
+    ul {
+      position: relative;
+      padding: 0 0 0 2.2rem;
+      margin: 0;
+      list-style: decimal;
+      & > li {
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
 }
 
 .page-ir-epn,

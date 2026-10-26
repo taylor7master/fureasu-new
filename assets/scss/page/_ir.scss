@@ -10,10 +10,10 @@
 
   .ir-news {
     position: relative;
-    padding: 8.0rem 0 9.0rem;
-    @include sp {
-      padding: 6.0rem 0 7.0rem;
-    }
+    // padding: 8.0rem 0 9.0rem;
+    // @include sp {
+    //   padding: 6.0rem 0 7.0rem;
+    // }
 
     .container {
       position: relative;
@@ -180,7 +180,7 @@
 
   .ir-index {
     position: relative;
-    padding: 7.2rem 0 8.0rem;
+    padding: 8.0rem 0 9.0rem;
     background: $color-bg-pink;
 
     @include sp {
@@ -377,9 +377,9 @@
       display: block;
       padding: 0;
       @include pc {
-        position: sticky;
-        top: 12.8rem;
-        left: 0;
+        // position: sticky;
+        // top: 12.8rem;
+        // left: 0;
         float: right;
         width: 24.0rem;
       }

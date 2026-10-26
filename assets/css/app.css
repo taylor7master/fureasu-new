@@ -3890,7 +3890,7 @@ body.mobile-nav-active #mobile-nav {
 }
 .top-ir-section .section-content .ir-card .info {
   position: relative;
-  width: calc(100% - 7.8rem);
+  width: calc(100% - 8rem);
   float: right;
   z-index: 3;
 }
@@ -10342,12 +10342,6 @@ body.mobile-nav-active #mobile-nav {
 }
 .page-ir .ir-news {
   position: relative;
-  padding: 8rem 0 9rem;
-}
-@media only screen and (max-width: 768px) {
-  .page-ir .ir-news {
-    padding: 6rem 0 7rem;
-  }
 }
 .page-ir .ir-news .container {
   position: relative;
@@ -10540,7 +10534,7 @@ body.mobile-nav-active #mobile-nav {
 }
 .page-ir .ir-index {
   position: relative;
-  padding: 7.2rem 0 8rem;
+  padding: 8rem 0 9rem;
   background: #FCF0FA;
 }
 @media only screen and (max-width: 768px) {
@@ -10765,9 +10759,6 @@ body.mobile-nav-active #mobile-nav {
 }
 @media print, screen and (min-width: 769px) {
   .page-ir:has(.page-ir-sidebar) .page-ir-sidebar {
-    position: sticky;
-    top: 12.8rem;
-    left: 0;
     float: right;
     width: 24rem;
   }
@@ -11917,6 +11908,30 @@ body.mobile-nav-active #mobile-nav {
 }
 .page-ir-mail .mail-note a:hover {
   color: #23527C;
+}
+.page-ir-mail .mail-notes {
+  position: relative;
+  line-height: 2.8rem;
+}
+.page-ir-mail .mail-notes h4 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  text-indent: -0.8rem;
+  margin: 0 0 1.6rem;
+}
+.page-ir-mail .mail-notes ul {
+  position: relative;
+  padding: 0 0 0 2.2rem;
+  margin: 0;
+  list-style: decimal;
+}
+.page-ir-mail .mail-notes ul > li {
+  position: relative;
+}
+.page-ir-mail .mail-notes ul > li:not(:last-child) {
+  margin-bottom: 1.2rem;
 }
 
 .page-ir-epn .section-title,
