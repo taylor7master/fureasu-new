@@ -156,6 +156,13 @@
             position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
         }
 
@@ -188,6 +195,7 @@
           }
           .player-image {
             position: relative;
+            overflow: hidden;
             @include pc {
               width: 23.0rem;
               float: left;
@@ -195,6 +203,11 @@
             @include sp {
               width: 100%;
               margin-bottom: 2.0rem;
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
             }
           }
           .player-body {
@@ -375,8 +388,15 @@
             position: relative;
             width: 100%;
             aspect-ratio: 493 / 250;
+            overflow: hidden;
             @include sp {
               aspect-ratio: 320 / 194;
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
 

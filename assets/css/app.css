@@ -3412,8 +3412,8 @@ body.mobile-nav-active #mobile-nav {
             box-shadow: -1.2rem 1.4rem 0 rgba(177, 0, 128, 0.24);
   }
 }
-.mainvisual__photos .main.scrt-cover img,
-.mainvisual__photos .sub.scrt-cover img {
+.mainvisual__photos .main img,
+.mainvisual__photos .sub img {
   width: 100%;
   height: auto;
   -o-object-fit: fill;
@@ -4569,11 +4569,17 @@ body.mobile-nav-active #mobile-nav {
   position: relative;
   width: 30rem;
   margin-bottom: 2.4rem;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .company-message .section-profile .image {
     margin-bottom: 2rem;
   }
+}
+.company-message .section-profile .image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .company-message .section-profile .role {
   position: relative;
@@ -4978,7 +4984,13 @@ body.mobile-nav-active #mobile-nav {
 .company-history .section-content .history-image {
   position: relative;
   width: 100%;
+  overflow: hidden;
   z-index: 3;
+}
+.company-history .section-content .history-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 @media print, screen and (min-width: 769px) {
   .company-history .section-content .history-image {
@@ -5412,6 +5424,14 @@ body.mobile-nav-active #mobile-nav {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+.csr-intro .section-content .csr-block .block-content .support-photos .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .csr-intro .section-content .csr-block .block-content .player-list {
   position: relative;
@@ -5446,6 +5466,7 @@ body.mobile-nav-active #mobile-nav {
 }
 .csr-intro .section-content .csr-block .block-content .player-card .player-image {
   position: relative;
+  overflow: hidden;
 }
 @media print, screen and (min-width: 769px) {
   .csr-intro .section-content .csr-block .block-content .player-card .player-image {
@@ -5458,6 +5479,11 @@ body.mobile-nav-active #mobile-nav {
     width: 100%;
     margin-bottom: 2rem;
   }
+}
+.csr-intro .section-content .csr-block .block-content .player-card .player-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .csr-intro .section-content .csr-block .block-content .player-card .player-body {
   position: relative;
@@ -5679,11 +5705,19 @@ body.mobile-nav-active #mobile-nav {
   position: relative;
   width: 100%;
   aspect-ratio: 493/250;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .csr-intro .section-content .csr-block .block-content .activity-card .card-image {
     aspect-ratio: 320/194;
   }
+}
+.csr-intro .section-content .csr-block .block-content .activity-card .card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .csr-intro .section-content .csr-block .block-content .activity-card .card-body {
   position: relative;
@@ -6667,11 +6701,19 @@ body.mobile-nav-active #mobile-nav {
 .research-verify .section-content .verify-card .verify-image {
   position: relative;
   aspect-ratio: 486/250;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .research-verify .section-content .verify-card .verify-image {
     aspect-ratio: 350/196;
   }
+}
+.research-verify .section-content .verify-card .verify-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .research-verify .section-content .verify-card .verify-body {
   position: relative;
@@ -7589,11 +7631,19 @@ body.mobile-nav-active #mobile-nav {
   position: relative;
   width: 100%;
   aspect-ratio: 441/154;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .compliance-quality .section-evaluate .evaluate-content .evaluate-box .box-body .card .photo {
     aspect-ratio: 294/184;
   }
+}
+.compliance-quality .section-evaluate .evaluate-content .evaluate-box .box-body .card .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .compliance-quality .section-evaluate .evaluate-content .evaluate-box .box-body .card .content {
   position: relative;
@@ -7646,12 +7696,18 @@ body.mobile-nav-active #mobile-nav {
 }
 .compliance-quality .section-elearn .elearn-photo {
   position: relative;
+  overflow: hidden;
 }
 @media print, screen and (min-width: 769px) {
   .compliance-quality .section-elearn .elearn-photo {
     width: 38rem;
     float: right;
   }
+}
+.compliance-quality .section-elearn .elearn-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .compliance-quality .section-lab {
   position: relative;
@@ -7687,12 +7743,18 @@ body.mobile-nav-active #mobile-nav {
 }
 .compliance-quality .section-lab .lab-photo {
   position: relative;
+  overflow: hidden;
 }
 @media print, screen and (min-width: 769px) {
   .compliance-quality .section-lab .lab-photo {
     float: left;
     width: 26.6rem;
   }
+}
+.compliance-quality .section-lab .lab-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .compliance-quality .section-lab .lab-action {
   position: relative;
@@ -7935,11 +7997,19 @@ body.mobile-nav-active #mobile-nav {
   width: 100%;
   aspect-ratio: 540/248;
   margin: 0;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .page-service .section-content .service-card .card-thumb {
     aspect-ratio: 350/240;
   }
+}
+.page-service .section-content .service-card .card-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-service .section-content .service-card .card-body {
   position: relative;
@@ -8782,6 +8852,9 @@ body.mobile-nav-active #mobile-nav {
 }
 .single-blog .blog-detail-wrapper .blog-thumb img {
   position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .single-blog .blog-detail-wrapper .blog-detail {
   position: relative;
@@ -10933,7 +11006,13 @@ body.mobile-nav-active #mobile-nav {
   position: relative;
   width: 100%;
   margin: 6.4rem 0 4.8rem;
+  overflow: hidden;
   z-index: 1;
+}
+.page-ir-message .section-content .image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .page-ir-message .section-content .image {

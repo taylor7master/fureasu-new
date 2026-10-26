@@ -62,8 +62,14 @@
       position: relative;
       width: 30.0rem;
       margin-bottom: 2.4rem;
+      overflow: hidden;
       @include sp {
         margin-bottom: 2.0rem;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
     }
     .role {
@@ -418,7 +424,13 @@
     .history-image {
       position: relative;
       width: 100%;
+      overflow: hidden;
       z-index: 3;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
       @include pc {
         position: absolute;
         top: 2.4rem;

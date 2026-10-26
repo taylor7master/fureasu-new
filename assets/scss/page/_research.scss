@@ -236,8 +236,15 @@
       .verify-image {
         position: relative;
         aspect-ratio: 486 / 250;
+        overflow: hidden;
         @include sp {
           aspect-ratio: 350 / 196;
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
