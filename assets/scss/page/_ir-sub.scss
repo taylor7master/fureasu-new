@@ -725,6 +725,13 @@
         }
       }
     }
+    a {
+      color: #337AB7;
+      text-decoration: underline;
+      &:hover {
+        color: #23527C;
+      }
+    }
   }
 
 }

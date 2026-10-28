@@ -420,6 +420,10 @@
             }
             .desc {
               position: relative;
+              a {
+                color: $color-base;
+                text-decoration: underline;
+              }
             }
           }
     

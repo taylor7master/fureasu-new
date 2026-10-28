@@ -237,7 +237,7 @@
 
   // Lenis smooth scroll (tojiro.net / Luxy-like inertia)
   function initLenis() {
-    if (reduceMotion || typeof Lenis === 'undefined') {
+    if (reduceMotion || typeof Lenis === 'undefined' || document.querySelector('.page-ir-mail')) {
       scrollToLocationHash();
       return;
     }

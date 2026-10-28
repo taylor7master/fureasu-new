@@ -505,6 +505,10 @@
         padding-left: 1.0rem;
         border-top: 1px solid $color-line;
         border-bottom: 1px solid $color-line;
+        a {
+          color: $color-base;
+          text-decoration: underline;
+        }
       }
       span {
         font: inherit;
