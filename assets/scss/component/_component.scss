@@ -161,39 +161,26 @@
   background: $color-base;
 }
 
+.btn--submit {
+  font-size: 2.0rem;
+  height: 7.4rem;
+  border-radius: 7.4rem;
+  min-width: 33.2rem;
+  @include sp {
+    font-size: 1.6rem;
+    height: 6.4rem;
+    min-width: 32.0rem;
+  }
+
+  &::after {
+    border-radius: 7.4rem;
+  }
+}
+
 .is-static {
   pointer-events: none;
   &:hover {
     pointer-events: none;
-  }
-}
-
-
-
-.btn-text {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.2rem;
-  color: $color-base;
-  font-size: 1.2rem;
-  font-weight: 500;
-  .arrow {
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    border: 1px solid $color-base;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 46%;
-      width: 0.6rem;
-      height: 0.6rem;
-      border-top: 1px solid $color-base;
-      border-right: 1px solid $color-base;
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
   }
 }
 

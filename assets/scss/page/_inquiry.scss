@@ -1,0 +1,614 @@
+.page-inquiry {
+  position: relative;
+  background: #FBEFF6;
+  padding: 10.0rem 0 10.0rem;
+  @include sp {
+    padding: 6.0rem 0 6.0rem;
+  }
+
+  .container {
+    position: relative;
+    @include pc {
+      max-width: 126.4rem;
+    }
+  }
+
+  .section-head {
+    position: relative;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $color-base;
+    margin-bottom: 4.0rem;
+    @include sp {
+      margin-bottom: 2.8rem;
+    }
+    .en {
+      position: relative;
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 3.2rem;
+      color: $color-base;
+      text-align: left;
+      margin-bottom: 0.2rem;
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+    }
+    .ja {
+      position: relative;
+      display: block;
+      font-size: 4.8rem;
+      font-weight: 600;
+      line-height: 6.4rem;
+      color: $color-base;
+      text-align: left;
+      @include sp {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+
+  .section-desc {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.75;
+    text-align: left;
+    margin-bottom: 6.0rem;
+    @include sp {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      margin-bottom: 4.0rem;
+    }
+  }
+
+  .section-content {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .inquiry-form {
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: $color-primary;
+    text-align: left;
+    padding: 0;
+    background: none;
+    border: none;
+    @include sp {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+    /* input */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"],
+    select,
+    textarea {
+      position: relative;
+      background: $color-white;
+      border: 1px solid rgba($color-primary, 0.19);
+      padding: 1.2rem 2.0rem;
+      width: 100%;
+      font-family: $font_inter;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.75;
+      text-align: left;
+      color: $color-primary;
+      outline: none;
+      vertical-align: middle;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+      box-shadow: 0 0 1.0rem rgba(#231815, 0.25);
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+      }
+      &::placeholder {
+        color: rgba($color-primary, 0.4);
+      }
+      &.wpcf7-not-valid {
+        border-color: $color-error;
+      }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"],
+    select {
+      height: 5.4rem;
+    }
+
+    textarea {
+      height: 20.0rem;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="number"]:focus,
+    input[type="password"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: $color-base;
+    }
+
+    .search-zip-btn {
+      position: relative;
+      display: block;
+      gap: 0.8rem;
+      width: 20.0rem;
+      max-width: 100%;
+      height: 5.4rem;
+      padding: 0;
+      background: $color-base;
+      font-family: $font_inter;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 5.4rem;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+      border-radius: 0;
+      border: none;
+      outline: none;
+      margin: 0;
+      z-index: 0;
+      span {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+        z-index: 3;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        display: block;
+        background: $color-yellow;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+        transform-origin: right top;
+        transform: scale(0, 1);
+        z-index: 1;
+      }
+      &:hover {
+        color: $color-base;
+        &::before {
+          transform-origin: left top;
+          transform: scale(1, 1);
+        }
+      }
+      
+    }    
+
+    .form-inputs {
+      position: relative;
+      display: block;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      & > li {
+        position: relative;
+        display: block;
+        padding: 0;
+        &:not(:last-child) {
+          margin-bottom: 1.2rem;
+          @include sp {
+            margin-bottom: 2.0rem;
+          }
+        }
+      }
+    }
+    .input-group {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      @include pc {
+        display: grid;
+        grid-template-columns: 25.0rem minmax(0, 1fr);
+        gap: 1.2rem;
+      }
+      .input-label {
+        position: relative;
+        padding: 4.0rem 3.0rem;
+        background: $color-base;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem 1.6rem;
+        font: inherit;
+        color: $color-white;
+        @include sp {
+          padding: 1.6rem 2.0rem;
+        }
+        label {
+          position: relative;
+          display: block;
+          font: inherit;
+          color: inherit;
+          width: 100%;
+          &::after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          .required {
+            @include pc {
+              float: right;
+              margin-left: 1.6rem;
+            }
+            @include sp {
+              margin-left: 2.0rem;
+            }
+          }
+        }
+        .required {
+          position: relative;
+          display: inline-block;
+          padding: 0.2rem 2.0rem;
+          background: $color-yellow;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $color-base;
+          white-space: nowrap;
+          border-radius: 2.8rem;
+          margin: 0;
+          @include sp {
+            padding: 0 1.6rem;
+          }
+        }
+      }
+      .input-field {
+        position: relative;
+        display: block;
+        padding: 4.0rem 3.0rem;
+        background: $color-white;
+        @include sp {
+          padding: 2.0rem 2.0rem;
+        }
+      }
+    }
+    .form-accept {
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin-top: 7.0rem;
+      @include sp {
+        margin-top: 6.0rem;;
+      }
+      a {
+        color: $color-base;
+        text-decoration: underline;
+      }
+      .accept-note {
+        position: relative;
+        font-weight: 500;
+        text-align: center;
+        @include sp {
+          text-align: left;
+        }
+        &.mb-16 {
+          margin-bottom: 1.6rem;
+          @include sp {
+            margin-bottom: 1.8rem;
+          }
+        }
+        &.mt-40 {
+          margin-top: 4.0rem;
+          @include sp {
+            margin-top: 3.6rem;
+          }
+        }
+      }
+    }
+    .form-submit {
+      position: relative;
+      margin-top: 8.0rem;
+      @include sp {
+        margin-top: 6.0rem;
+      }
+      .btn {
+        margin: 0 auto;
+        cursor: pointer;
+      }
+    }
+    .wpcf7-row {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.0rem 2.0rem;
+      @include sp {
+        gap: 1.6rem 1.6rem;
+      }
+      & + .wpcf7-row {
+        margin-top: 3.0rem;
+        @include sp {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+    .wpcf7-column {
+      position: relative;
+      flex: 0 0 auto;
+      width: fit-content;
+      max-width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1.6rem;
+    }
+    .wpcf7-note {
+      position: relative;
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.75;
+      color: $color-base;
+      text-align: left;
+      margin-top: 1.2rem;
+    }
+    .label {
+      display: block;
+      flex: 0 0 auto;
+      width: fit-content;
+      font: inherit;
+      color: $color-base;
+      padding: 1.3rem 0 0;
+      @include sp {
+        padding: 1.4rem 0 0;
+      }
+    }
+    .input {
+      display: block;
+      flex: 0 0 auto;
+      width: fit-content;
+    }
+    .w-200 {
+      width: 20.0rem;
+      max-width: 100%;
+    }
+    .w-500 {
+      width: 48.4rem;
+      max-width: 100%;
+    }
+    .w-760 {
+      width: 71.8rem;
+      max-width: 100%;
+    }
+
+    .name-field,
+    .name-furigana-field {
+      @include sp {
+        .wpcf7-column {
+          width: 100%;
+        }
+        .input {
+          flex: 1 1 auto;
+        }
+        .w-200 {
+          width: auto;
+        }
+      }
+    }
+    .zip-field {
+      @include sp {
+        .wpcf7-column:nth-child(1), .wpcf7-column:nth-child(3) {
+          width: calc(50% - 2.3rem);
+        }
+        .wpcf7-column:nth-child(4) {
+          width: 100%;
+          .search-zip-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .address-field {
+      @include sp {
+        .label {
+          padding: 0;
+        }
+        .wpcf7-row {
+          gap: 1.2rem 1.6rem;
+        }
+        .wpcf7-column {
+          width: 100%;
+        }
+        .w-500 {
+          width: 100%;
+        }
+      }
+    }
+
+    .tel-field {
+      @include sp {
+        .wpcf7-row {
+          gap: 1.2rem 1.2rem;
+        }
+        .wpcf7-column:nth-child(1), .wpcf7-column:nth-child(3), .wpcf7-column:nth-child(5) {
+          width: calc((100% - 7.6rem) / 3);
+        }
+      }
+    }
+
+    .email-field {
+      @include sp {
+        .wpcf7-column {
+          width: 100%;
+        }
+        .w-500 {
+          width: 100%;
+        }
+      }
+    }
+
+    .wpcf7-form-control-wrap {
+      position: relative;
+      display: block;
+    }
+
+    .wpcf7-radio {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.0rem 5.0rem;
+      color: $color-base;
+      @include sp {
+        gap: 1.0rem 2.0rem;
+      }
+      .wpcf7-list-item {
+        flex: 0 0 auto;
+        width: fit-content;
+        max-width: 100%;
+      }
+    }
+
+    .wpcf7-list-item {
+      position: relative;
+      display: block;
+      padding-left: 0;
+      margin: 0;
+
+      label {
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      &.wpcf7-list-item [type="radio"],
+      &.wpcf7-list-item [type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+
+        &+.wpcf7-list-item-label {
+          position: relative;
+          display: inline-block;
+          padding-left: 3.6rem;
+          @include sp {
+            padding-left: 3.2rem;
+          }
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+          }
+        }
+      }
+
+      &.wpcf7-list-item [type="radio"]+.wpcf7-list-item-label::before,
+      &.wpcf7-list-item [type="radio"]+.wpcf7-list-item-label::after {
+        border-radius: 5.0rem;
+      }
+
+      &.wpcf7-list-item [type="radio"]+.wpcf7-list-item-label::before {
+        top: 0.4rem;
+        left: 0;
+        width: 2.0rem;
+        height: 2.0rem;
+        border: 1px solid $color-primary;
+        @include sp {
+          top: 0.2rem;
+        }
+      }
+
+      &.wpcf7-list-item [type="radio"]+.wpcf7-list-item-label::after {
+        top: 0.9rem;
+        left: 0.5rem;
+        width: 1.0rem;
+        height: 1.0rem;
+        background: $color-base;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        @include sp {
+          top: 0.7rem;
+        }
+      }
+
+      &.wpcf7-list-item [type="radio"]:not(:checked)+.wpcf7-list-item-label::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &.wpcf7-list-item [type="radio"]:checked+.wpcf7-list-item-label::after {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &.wpcf7-list-item [type="checkbox"]+.wpcf7-list-item-label::before {
+        top: 0.2rem;
+        left: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: $color-white;
+        border: 1px solid $color-primary;
+
+        @include sp {
+          top: 0rem;
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+      }
+
+      &.wpcf7-list-item [type="checkbox"]+.wpcf7-list-item-label::after {
+        top: 0.3rem;
+        left: 0.9rem;
+        width: 0.8rem;
+        height: 1.6rem;
+        border: 1px solid $color-base;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        transition: all 0.2s;
+        @include sp {
+          top: 0.1rem;
+          left: 0.8rem;
+        }
+      }
+
+      &.wpcf7-list-item [type="checkbox"]:not(:checked)+.wpcf7-list-item-label::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &.wpcf7-list-item [type="checkbox"]:checked+.wpcf7-list-item-label::before {
+        border-color: $color-primary;
+      }
+
+      &.wpcf7-list-item [type="checkbox"]:checked+.wpcf7-list-item-label::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .wpcf7-spinner {
+      display: none;
+    }
+  }
+  .wpcf7-response-output {
+    position: relative;
+    width: 100%;
+    padding: 2.0rem 2.4rem !important;
+    margin: 4.0rem auto 0 !important;
+  }
+}
